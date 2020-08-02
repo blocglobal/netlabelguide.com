@@ -49,6 +49,8 @@ const App = ({ Component, pageProps }) => {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          media="print"
+          onload="this.media='all'"
         />
         <script
           async

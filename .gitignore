@@ -4,5 +4,4 @@ ngconfig.js
 dist
 node_modules
 out
-workers-site
 wrangler.toml

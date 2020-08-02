@@ -1,0 +1,20 @@
+.CharacterList {
+  width: 100%;
+  padding: 0 1rem 1rem 0;
+
+  @media (min-width: 48rem) {
+    width: 32%;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}

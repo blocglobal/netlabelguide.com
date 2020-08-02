@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import './CharacterList.scss';
 
 const itemFirstCharacterMatches = (item, character) => {
   return (
@@ -14,17 +14,24 @@ const CharacterList = ({
   HeadingTag = 'h2',
   onRenderItem,
 }) => {
+  let key = 0;
+
   return (
-    <Fragment>
+    <div className="CharacterList">
       <HeadingTag>{character.toUpperCase()}</HeadingTag>
       <ul>
         {data.map(item => {
           if (itemFirstCharacterMatches(item[testField], character)) {
-            return <li>{onRenderItem(item)}</li>;
+            const listItem = (
+              <li key={`${character}-${key}`}>{onRenderItem(item)}</li>
+            );
+            key = key + 1;
+
+            return listItem;
           }
         })}
       </ul>
-    </Fragment>
+    </div>
   );
 };
 

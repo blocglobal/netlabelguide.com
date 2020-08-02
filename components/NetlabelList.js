@@ -1,6 +1,6 @@
-import { Fragment } from 'react';
 import Link from 'next/link';
 import CharacterList from './CharacterList';
+import './NetlabelList.scss';
 
 const chars = '#abcdefghijklmnopqrstuvwxyz';
 
@@ -12,11 +12,12 @@ const NetlabelList = ({ netlabels }) => {
   );
 
   return (
-    <Fragment>
+    <div className="NetlabelList">
       {netlabels.length &&
         chars.split('').map(char => {
           return (
             <CharacterList
+              key={char}
               character={char}
               data={netlabels}
               testField="label_name"
@@ -25,7 +26,20 @@ const NetlabelList = ({ netlabels }) => {
             />
           );
         })}
-    </Fragment>
+      <div className="credit">
+        <p>
+          <strong>List source:</strong>{' '}
+          <a href="https://github.com/timpulver/netlabel-list">
+            Tim Pulver’s Netlabel List
+          </a>
+        </p>
+        <p>
+          If you’d like your netlabel added, please{' '}
+          <a href="https://blocsonic.com/contact">contact us here</a> with the
+          relevant data.
+        </p>
+      </div>
+    </div>
   );
 };
 

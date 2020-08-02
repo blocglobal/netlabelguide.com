@@ -1,12 +1,23 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import "./Layout.scss";
+import React from 'react';
+import Header from './Header';
+import HeaderInner from './HeaderInner';
+import Footer from './Footer';
+import './Layout.scss';
 
-const Layout = ({ title, hideTitle, className, children }) => {
+const Layout = ({
+  title,
+  hideTitle,
+  header = 'default',
+  className,
+  children,
+}) => {
   return (
     <div className={className}>
-      <Header title={title} hideTitle={hideTitle} />
+      {header === 'default' ? (
+        <Header title={title} hideTitle={hideTitle} />
+      ) : (
+        <HeaderInner />
+      )}
       <div className="content">{children}</div>
       <Footer />
     </div>

@@ -1,12 +1,17 @@
-import React from "react";
-import Head from "next/head";
-import Layout from "../components/Layout";
-import PrelaunchLogo from "../components/PrelaunchLogo";
-import "./index.scss";
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import Layout from '../components/Layout';
+import PrelaunchLogo from '../components/PrelaunchLogo';
+import './index.scss';
 
 const HomePage = () => {
   return (
-    <Layout className="Home" hideTitle>
+    <Layout
+      className="Home"
+      title="The future home of The Netlabel Guide"
+      hideTitle
+    >
       <Head>
         <link
           rel="canonical"
@@ -15,6 +20,19 @@ const HomePage = () => {
         />
       </Head>
       <PrelaunchLogo />
+      <p>
+        Still under development, but here’s a{' '}
+        <Link href="/netlabels">
+          <a>
+            <strong>Netlabel list</strong>
+          </a>
+        </Link>{' '}
+        for now. Thanks to{' '}
+        <a href="https://github.com/timpulver/netlabel-list">
+          <strong>Tim Pulver</strong>
+        </a>{' '}
+        for the data.
+      </p>
     </Layout>
   );
 };

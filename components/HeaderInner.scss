@@ -1,0 +1,16 @@
+.HeaderInner {
+  background: linear-gradient(314deg, rgba(114,14,177,1) 0%, rgba(70,142,219,1) 17%, rgba(38,236,250,1) 30%, rgba(62,197,251,1) 60%, rgba(186,0,255,1) 100%);
+  line-height: 1;
+
+  a {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 1rem 1rem;
+
+    div {
+      display: inline-block;
+      width: 90%;
+      max-width: 36rem;
+    }
+  }
+}

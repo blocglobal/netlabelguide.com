@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
 import config from '../ngconfig.js';
+import './_app.scss';
 
 function injectGA() {
   return {
@@ -52,6 +53,27 @@ const App = ({ Component, pageProps }) => {
           media="print"
           onload="this.media='all'"
         />
+        <meta
+          property="og:url"
+          content="https://netlabelguide.com"
+          key="og-url"
+        />
+        <meta property="og:type" content="website" key="og-type" />
+        <meta
+          property="og:title"
+          content="The future home of The Netlabel Guide"
+          key="og-title"
+        />
+        <meta
+          property="og:description"
+          content="The Netlabel Guide’s goal will be to act as a central hub for music lovers to find great music online via great netlabels"
+          key="og-description"
+        />
+        <meta
+          property="og:image"
+          content="https://netlabelguide.com/img/netlabelguide.png"
+          key="og-image"
+        />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${config.ga}`}
@@ -59,19 +81,6 @@ const App = ({ Component, pageProps }) => {
         <script dangerouslySetInnerHTML={injectGA()} />
       </Head>
       <Component {...pageProps} />
-      <style jsx global>{`
-        body {
-          font-family: sans-serif;
-          font-size: 16px;
-          line-height: 1.6;
-          margin: 0;
-        }
-
-        #__next {
-          width: 100vw;
-          min-height: 100vh;
-        }
-      `}</style>
     </Fragment>
   );
 };

@@ -1,12 +1,14 @@
-import React from "react";
-import Head from "next/head";
-import Layout from "../../components/Layout";
-import getNetlabels from "../../utils/getNetlabels";
-import sluggify from "../../utils/sluggify";
+import React from 'react';
+import Head from 'next/head';
+import Layout from '../../components/Layout';
+import NetlabelUrls from '../../components/NetlabelUrls';
+import getNetlabels from '../../utils/getNetlabels';
+import sluggify from '../../utils/sluggify';
+import Breadcrumbs from '../../components/Breadcrumbs';
 
 const Netlabel = ({ netlabel }) => {
   return (
-    <Layout className="Netlabel" title={netlabel.label_name}>
+    <Layout className="Netlabel" header="inner">
       <Head>
         <link
           rel="canonical"
@@ -14,25 +16,32 @@ const Netlabel = ({ netlabel }) => {
           key="canonical"
         />
         <title>{netlabel.label_name}</title>
+        <meta
+          property="og:url"
+          content={`https://netlabelguide.com/netlabel/${netlabel.slug}`}
+          key="og-url"
+        />
+        <meta
+          property="og:title"
+          content={`${netlabel.label_name} page at The Netlabel Guide`}
+          key="og-title"
+        />
       </Head>
-      {netlabel.urls &&
-        Object.values(netlabel.urls).map((url) => {
-          return (
-            <p>
-              <a href={url}>{url}</a>
-            </p>
-          );
-        })}
-      <p>
-        <strong>Activity:</strong> {netlabel.activity_state}
-      </p>
+      <Breadcrumbs
+        links={[
+          { href: '/netlabels', name: 'Netlabels' },
+          { href: `/netlabel/${netlabel.slug}`, name: netlabel.label_name },
+        ]}
+      />
+      <h1>{netlabel.label_name}</h1>
+      <NetlabelUrls urls={netlabel.urls} />
     </Layout>
   );
 };
 
 export async function getStaticPaths() {
   const netlabels = await getNetlabels();
-  const paths = netlabels.map((netlabel) => ({
+  const paths = netlabels.map(netlabel => ({
     params: { slug: netlabel.slug },
   }));
 
@@ -43,7 +52,7 @@ export async function getStaticProps({ params }) {
   const netlabels = await getNetlabels();
   let netlabel;
 
-  netlabels.map((n) => {
+  netlabels.map(n => {
     if (n.label_name && sluggify(n.label_name) === params.slug) {
       netlabel = n;
     }

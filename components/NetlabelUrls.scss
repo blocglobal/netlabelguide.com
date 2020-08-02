@@ -9,4 +9,13 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
+  a {
+    display: inline-block;
+    padding: .4rem 0;
+
+    @media (min-width: 48rem) {
+      padding: 0;
+    }
+  }
 }

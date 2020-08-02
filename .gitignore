@@ -1,5 +1,6 @@
 .cargo-ok
 .next
+ngconfig.js
 dist
 node_modules
 out

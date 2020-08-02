@@ -1,17 +1,16 @@
-import React, { Fragment } from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import "./Layout.scss";
 
-const Layout = ({ className, children }) => {
-    return (
-        <Fragment>
-            <Header/>
-                <div className={className}>
-                    {children}
-                </div>
-            <Footer />
-        </Fragment>
-    );
+const Layout = ({ title, hideTitle, className, children }) => {
+  return (
+    <div className={className}>
+      <Header title={title} hideTitle={hideTitle} />
+      <div className="content">{children}</div>
+      <Footer />
+    </div>
+  );
 };
 
 export default Layout;

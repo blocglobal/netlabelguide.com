@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import PrelaunchLogo from '../components/PrelaunchLogo';
 import './index.scss';
 
 const HomePage = () => {
@@ -19,8 +18,7 @@ const HomePage = () => {
           key="canonical"
         />
       </Head>
-      <PrelaunchLogo />
-      <p>
+      <p className="center">
         Still under development, but here’s a{' '}
         <Link href="/netlabels">
           <a>

@@ -1,11 +1,11 @@
 import React from 'react';
-import cx from 'classnames';
+import Logo from './Logo';
 import './Header.scss';
 
-const Header = ({ title = 'The Netlabel Guide', hideTitle = false }) => {
+const Header = () => {
   return (
-    <header className={cx('Header', { hideTitle: hideTitle })}>
-      <h1>{title}</h1>
+    <header className="Header">
+      <Logo />
     </header>
   );
 };

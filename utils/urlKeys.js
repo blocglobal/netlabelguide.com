@@ -8,4 +8,5 @@ export default {
   SITE: 'homepage',
   FMA: 'free_music_archive',
   ARCHIVE: 'internet_archive',
+  INSTAGRAM: 'instagram'
 };

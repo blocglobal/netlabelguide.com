@@ -4,6 +4,7 @@ import {
   faFacebook,
   faSoundcloud,
   faTwitter,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import { faRss, faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
 import { SquirrelIcon } from '@primer/octicons-react';
@@ -49,6 +50,12 @@ const NetlabelUrls = ({ urls = [] }) => {
         <li>
           <FontAwesomeIcon icon={faFacebook} className="icon-link" />
           <a href={urls[urlKeys.FACEBOOK]}>{urls[urlKeys.FACEBOOK]}</a>
+        </li>
+      )}
+      {urls[urlKeys.INSTAGRAM] && (
+        <li>
+          <FontAwesomeIcon icon={faInstagram} className="icon-link" />
+          <a href={urls[urlKeys.INSTAGRAM]}>{urls[urlKeys.INSTAGRAM]}</a>
         </li>
       )}
       {urls[urlKeys.TWITTER] && (

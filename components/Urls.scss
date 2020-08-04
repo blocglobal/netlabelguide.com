@@ -1,5 +1,6 @@
-.NetlabelUrls {
+.Urls {
   width: 100%;
+  max-width: 31.25rem;
   padding: 0;
   
   li {
@@ -8,13 +9,5 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  a {
-    line-height: 2;
-
-    @media (min-width: 48rem) {
-      line-height: 1.6;
-    }
   }
 }

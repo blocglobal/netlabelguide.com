@@ -1,0 +1,173 @@
+{
+  "list_description": "List of Netlabel and Creative Commons related resources",
+  "copyright": "CC-BY-NC-SA 4.0",
+  "copyright_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "list_name": "Netlabel List",
+  "version": "1.0.0",
+  "updated": "2020-08-04",
+  "resources": [
+    {
+      "name": "Netlabel Day",
+      "slug": "netlabel-day",
+      "description": "The annual event celebrating netlabel culture every July 14th. Every year labels participate and release free music releases specifically for the event to help celebrate.",
+      "type": "event",
+      "urls": {
+        "homepage": "http://netlabelday.com",
+        "twitter": "https://twitter.com/netlabel_day",
+        "facebook": "https://facebook.com/netlabelday",
+        "instagram": "https://instagram.com/netlabelday",
+        "rss": "https://netlabelday.tumblr.com/rss"
+      }
+    },
+    {
+      "name": "CC Community Music Awards",
+      "slug": "cc-community-music-awards",
+      "description": "The annual award event that shines a spotlight on Creative Commons music excellence.",
+      "type": "event",
+      "urls": {
+        "homepage": "https://ccmusicawards.com",
+        "twitter": "https://twitter.com/ccmusicawards",
+        "facebook": "https://facebook.com/CCCommunityMusicAwards"
+      }
+    },
+    {
+      "name": "ccMixter",
+      "slug": "ccmixter",
+      "description": "A community site that encourages the use of Creative Commons licensed remixable music resources through content hosting and special remix events.",
+      "type": "community",
+      "urls": {
+        "homepage": "http://ccmixter.org",
+        "rss": "http://ccmixter.org/api/query?datasource=topics&type=home&page=welcome-to-ccmixter&f=rss",
+        "twitter": "https://twitter.com/ccMixterMusic",
+        "facebook": "https://facebook.com/CCMixter",
+        "instagram": "https://instagram.com/ccmixter"
+      }
+    },
+    {
+      "name": "Internet Archive Netlabels",
+      "slug": "internet-archive-netlabels",
+      "description": "This extensive archive has been archiving netlabels and their releases since 2003.",
+      "type": "archive",
+      "urls": {
+        "homepage": "https://archive.org/details/netlabels"
+      }
+    },
+    {
+      "name": "Netlabel Archive",
+      "slug": "netlabel-archive",
+      "description": "This important archive is dedicated to preserving the information and music of inactive netlabels. It features an extensive archive of Monotonik, one of the original netlabels which was active from 1996 to 2009.",
+      "type": "archive",
+      "urls": {
+        "homepage": "https://netlabelarchive.org",
+        "twitter": "https://twitter.com/NetlabelArchive",
+        "facebook": "https://facebook.com/netlabelarchive",
+        "instagram": "https://instagram.com/netlabelarchive",
+        "rss": "https://netlabelarchive.org/feed/"
+      }
+    },
+    {
+      "name": "Starfrosch.com",
+      "slug": "starfrosch-com",
+      "description": "Great Creative Commons music resource featuring 24/7 radio streams and the #hot111 chart.",
+      "type": "radio",
+      "urls": {
+        "homepage": "https://starfrosch.com",
+        "facebook": "https://facebook.com/starfrosch",
+        "twitter": "https://twitter.com/starfrosch",
+        "instagram": "https://www.instagram.com/starfroschofficial/",
+        "youtube": "https://www.youtube.com/c/StarfroschCH",
+        "rss": "https://starfrosch.com/feed"
+      }
+    },
+    {
+      "name": "Netwaves.org",
+      "slug": "netwaves-org",
+      "description": "A podcast specializing in spotlighting great Creative Commons music.",
+      "type": "podcast",
+      "urls": {
+        "homepage": "https://www.netwaves.org",
+        "rss": "https://www.netwaves.org/feeds/posts/default?alt=rss",
+        "google-podcasts": "https://podcasts.google.com/feed/aHR0cDovL3d3dy5uZXR3YXZlcy5vcmcvcnNzLnhtbA?sa=X&ved=0CAIQ7dUFahcKEwjQq5egiPbqAhUAAAAAHQAAAAAQBA",
+        "apple-podcasts": "https://podcasts.apple.com/podcast/id203424250"
+      }
+    },
+    {
+      "name": "Musique Libre",
+      "slug": "musique-libre",
+      "description": "A French language non-profit organization focused on spreading the word about free culture and sharing.",
+      "type": "organization",
+      "urls": {
+        "homepage": "http://musique-libre.org",
+        "twitter": "https://twitter.com/Dogmazic",
+        "rss": "http://musique-libre.org/feed/"
+      }
+    },
+    {
+      "name": "Rynothebearded #OO Top 10",
+      "slug": "rynothebearded-oo-top-10",
+      "description": "A weekly podcast where they recap the top tracks as decided by the voters of the #OO chat.",
+      "type": "podcast",
+      "urls": {
+        "homepage": "http://rynothebearded.com/category/ooshow/",
+        "rss": "http://rynothebearded.com/feed/",
+        "twitter": "https://twitter.com/rynothebearded",
+        "facebook": "https://facebook.com/Rynothebearded"
+      }
+    },
+    {
+      "name": "clongclongmoo.org",
+      "slug": "clongclongmoo-org",
+      "description": "Blog spotlighting the latest netlabel releases.",
+      "type": "blog",
+      "urls": {
+        "homepage": "https://www.clongclongmoo.org",
+        "twitter": "https://twitter.com/clongclongmoo",
+        "rss": "https://www.clongclongmoo.org/feed/"
+      }
+    },
+    {
+      "name": "Netlabels.org",
+      "slug": "netlabels-org",
+      "description": "The original Netlabel information resource and guide which still features newly posted blog posts every now and then.",
+      "type": "guide",
+      "urls": {
+        "homepage": "https://netlabels.org",
+        "twitter": "https://twitter.com/netlabels",
+        "rss": "https://netlabels.org/feed.xml"
+      }
+    },
+    {
+      "name": "Dogmazic",
+      "slug": "dogmazic",
+      "description": "Music archive site affiliated with Musique Libre featuring an extensive catalogue of copyleft licensed music releases.",
+      "type": "archive",
+      "urls": {
+        "homepage": "https://dogmazic.net",
+        "twitter": "https://twitter.com/Dogmazic"
+      }
+    },
+    {
+      "name": "Machtdose",
+      "slug": "machtdose",
+      "description": "A German language podcast featuring Creative Commons music.",
+      "type": "podcast",
+      "urls": {
+        "homepage": "https://machtdose.de",
+        "rss": "http://feeds.feedburner.com/machtdose",
+        "twitter": "http://twitter.com/machtdose",
+        "facebook": "http://facebook.com/Machtdose",
+        "youtube": "https://www.youtube.com/channel/UC0rjIjQFiR6tILAWtrlGEcA",
+        "soundcloud": "http://soundcloud.com/machtdose/"
+      }
+    },
+    {
+      "name": "Scene.org",
+      "slug": "scene-org",
+      "description": "The archive houses the largest demoscene file repository and has been active since 1996. It also contains many netlabels and releases.",
+      "type": "archive",
+      "urls": {
+        "homepage": "https://www.scene.org"
+      }
+    }
+  ]
+}

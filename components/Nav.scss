@@ -1,0 +1,22 @@
+.Nav {
+  background-color: #eeeeee;
+
+  a {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem;
+    margin-right: .5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover, &:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+  }
+}

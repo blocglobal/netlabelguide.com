@@ -1,7 +1,19 @@
 .Header {
-  &.hideTitle {
-    h1 {
-      display: none;
-    }
+  background: linear-gradient(314deg, rgba(114,14,177,1) 0%, rgba(70,142,219,1) 17%, rgba(38,236,250,1) 30%, rgba(62,197,251,1) 60%, rgba(186,0,255,1) 100%);
+  line-height: 1;
+  text-align: center;
+  padding: 2rem 0;
+
+  @media (min-width: 37.5rem) {
+    padding: 3rem 0 2rem;
+  }
+
+  @media (min-width: 48rem) {
+    padding: 5rem 0 2rem;
+  }
+
+  svg {
+    width: 75%;
+    max-width: 24rem;
   }
 }

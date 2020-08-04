@@ -1,9 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
-import NetlabelUrls from '../../components/NetlabelUrls';
+import Urls from '../../components/Urls';
 import getNetlabels from '../../utils/getNetlabels';
 import sluggify from '../../utils/sluggify';
+import capitalize from '../../utils/capitalize';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
 const Netlabel = ({ netlabel }) => {
@@ -34,7 +35,10 @@ const Netlabel = ({ netlabel }) => {
         ]}
       />
       <h1>{netlabel.label_name}</h1>
-      <NetlabelUrls urls={netlabel.urls} />
+      <Urls urls={netlabel.urls} />
+      <p>
+        <strong>Status:</strong> {capitalize(netlabel.activity_state)}
+      </p>
     </Layout>
   );
 };

@@ -11,6 +11,8 @@ function injectGA() {
 }
 
 const App = ({ Component, pageProps }) => {
+  const description =
+    'The Netlabel Guide helps music lovers find great music & educates them on how important it is to download/purchase music directly from artists and labels.';
   return (
     <Fragment>
       <Head>
@@ -19,10 +21,7 @@ const App = ({ Component, pageProps }) => {
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <meta
-          name="description"
-          content="The Netlabel Guide’s goal will be to act as a central hub for music lovers to find great music online via great netlabels"
-        />
+        <meta name="description" content={description} />
         <link
           rel="canonical"
           href="https://netlabelguide.com"
@@ -70,7 +69,7 @@ const App = ({ Component, pageProps }) => {
         />
         <meta
           property="og:description"
-          content="The Netlabel Guide’s goal will be to act as a central hub for music lovers to find great music online via great netlabels"
+          content={description}
           key="og-description"
         />
         <meta

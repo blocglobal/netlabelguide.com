@@ -22,18 +22,27 @@ a {
   }
 }
 
-h1 {
+h1, h2 {
   font-weight: 300;
 }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-.icon-link {
-  width: 1.2rem;
-  height: 1.2rem;
-  vertical-align: middle;
-  margin-right: .5rem;
-  color: rgb(114,14,177);
+.strong {
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}
+
+.hero {
+  font-weight: 300;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
 }

@@ -1,0 +1,17 @@
+.ResourceList {
+  display: flex;
+  flex-flow: wrap;
+
+  .resource {
+    flex: 1 0 100%;
+    margin: 0 2rem 2rem 0;
+  
+    @media (min-width: 37.5rem) {
+      flex-basis: 45%;
+    }
+  
+    @media (min-width: 48rem) {
+      flex-basis: 21%;
+    }
+  }
+}

@@ -19,7 +19,7 @@ const Breadcrumbs = ({ links = [] }) => {
       </li>
       {links.map(link => {
         const linkEl = (
-          <li property="itemListElement" typeof="ListItem">
+          <li property="itemListElement" typeof="ListItem" key={link.href}>
             <a property="item" typeof="WebPage" href={link.href}>
               <span property="name">{link.name}</span>
             </a>

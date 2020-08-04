@@ -8,5 +8,8 @@ export default {
   SITE: 'homepage',
   FMA: 'free_music_archive',
   ARCHIVE: 'internet_archive',
-  INSTAGRAM: 'instagram'
+  INSTAGRAM: 'instagram',
+  YOUTUBE: 'youtube',
+  GOOGLE_PODCASTS: 'google-podcasts',
+  APPLE_PODCASTS: 'apple-podcasts',
 };

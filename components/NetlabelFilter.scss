@@ -1,0 +1,21 @@
+.NetlabelFilter {
+  display: inline-block;
+  background-color: #F3F3F3;
+  margin: 0;
+  padding: 1rem;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  input {
+    padding: .5rem;
+    border: none;
+  }
+}

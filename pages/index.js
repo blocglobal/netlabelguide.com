@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import Layout from '../components/Layout';
 import SpotlightResources from '../components/SpotlightResources';
 import './index.scss';
@@ -19,20 +18,11 @@ const HomePage = () => {
           key="canonical"
         />
       </Head>
+      <div className="hero">
+        The site is still currently under development, keep checking back for
+        the latest updates.
+      </div>
       <SpotlightResources />
-      <p className="center">
-        Still under development, but here’s a{' '}
-        <Link href="/netlabels">
-          <a>
-            <strong>Netlabel list</strong>
-          </a>
-        </Link>{' '}
-        for now. Thanks to{' '}
-        <a href="https://github.com/timpulver/netlabel-list">
-          <strong>Tim Pulver</strong>
-        </a>{' '}
-        for the data.
-      </p>
     </Layout>
   );
 };

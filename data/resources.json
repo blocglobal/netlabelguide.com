@@ -31,7 +31,7 @@
       }
     },
     {
-      "name": "ccmixter",
+      "name": "ccMixter",
       "slug": "ccmixter",
       "description": "A community site that encourages the use of Creative Commons licensed remixable music resources through content hosting and special remix events.",
       "type": "community",
@@ -44,8 +44,8 @@
       }
     },
     {
-      "name": "Internet Archive Netlabels Collection",
-      "slug": "internet-archive-netlabels-collection",
+      "name": "Internet Archive Netlabels",
+      "slug": "internet-archive-netlabels",
       "description": "This extensive archive has been archiving netlabels and their releases since 2003.",
       "type": "archive",
       "urls": {

@@ -16,23 +16,25 @@ const CharacterList = ({
 }) => {
   let key = 0;
 
-  return (
+  const letterItems = data.filter(item =>
+    itemFirstCharacterMatches(item[testField], character)
+  );
+
+  return letterItems.length > 0 ? (
     <div className="CharacterList">
       <HeadingTag>{character.toUpperCase()}</HeadingTag>
       <ul>
-        {data.map(item => {
-          if (itemFirstCharacterMatches(item[testField], character)) {
-            const listItem = (
-              <li key={`${character}-${key}`}>{onRenderItem(item)}</li>
-            );
-            key = key + 1;
+        {letterItems.map(item => {
+          const listItem = (
+            <li key={`${character}-${key}`}>{onRenderItem(item)}</li>
+          );
+          key = key + 1;
 
-            return listItem;
-          }
+          return listItem;
         })}
       </ul>
     </div>
-  );
+  ) : null;
 };
 
 export default CharacterList;

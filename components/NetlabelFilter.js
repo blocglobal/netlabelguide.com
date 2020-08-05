@@ -15,7 +15,13 @@ const NetlabelFilter = ({ status, inputValue, onChange }) => {
         </Link>
       </li>
       <li>
-        <input type="text" value={inputValue} onChange={onChange} />
+        <input
+          type="text"
+          value={inputValue}
+          onChange={onChange}
+          aria-label="Filter netlabels"
+          placeholder="Filter netlabels"
+        />
       </li>
     </ul>
   );

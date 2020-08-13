@@ -2,7 +2,7 @@ import Link from 'next/link';
 import sluggify from '../utils/sluggify';
 import './Genres.scss';
 
-const Genres = ({ genres }) => {
+const Genres = ({ genres = [] }) => {
   return (
     <div className="Genres">
       <h2>Genres</h2>

@@ -2,15 +2,24 @@ import sluggify from './sluggify';
 
 const parseGenres = (netlabels, slug = null) => {
   let genreObject;
-  let genres = [];
+  const genres = [];
 
   netlabels.map(netlabel => {
     netlabel.genres &&
-      netlabel.genres.map(
-        g =>
-          genres.indexOf(g) === -1 &&
-          genres.push({ name: g, slug: sluggify(g) })
-      );
+      netlabel.genres.map(g => {
+        const slug = sluggify(g);
+        let exists = false;
+
+        genres.map(gi => {
+          if (gi.slug === slug) {
+            exists = true;
+          }
+        });
+
+        if (!exists) {
+          genres.push({ name: g, slug });
+        }
+      });
   });
 
   if (slug) {

@@ -31,6 +31,7 @@ const Genre = ({ genre, netlabels }) => {
       <Breadcrumbs
         links={[
           { href: '/netlabels', name: 'Netlabels' },
+          { href: '/netlabels/genres', name: 'Genres' },
           { href: `/genre/${genre.slug}`, name: genre.name },
         ]}
       />

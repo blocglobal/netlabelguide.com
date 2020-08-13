@@ -1,14 +1,17 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
-import Genres from '../../components/Genres';
+import GenreList from '../../components/GenreList';
 import Urls from '../../components/Urls';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import getNetlabels from '../../utils/getNetlabels';
+import parseGenres from '../../utils/parseGenres';
 import sluggify from '../../utils/sluggify';
 import capitalize from '../../utils/capitalize';
 
 const Netlabel = ({ netlabel }) => {
+  const genres = parseGenres([netlabel]);
+
   return (
     <Layout className="Netlabel" header="inner">
       <Head>
@@ -37,7 +40,7 @@ const Netlabel = ({ netlabel }) => {
       />
       <h1>{netlabel.label_name}</h1>
       <Urls urls={netlabel.urls} />
-      <Genres genres={netlabel.genres} />
+      <GenreList genres={genres} heading />
       <p>
         <strong>Status:</strong> {capitalize(netlabel.activity_state)}
       </p>

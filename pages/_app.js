@@ -16,7 +16,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <Head>
-        <title>The future home of The Netlabel Guide</title>
+        <title>The Netlabel Guide</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
@@ -62,11 +62,7 @@ const App = ({ Component, pageProps }) => {
           key="og-url"
         />
         <meta property="og:type" content="website" key="og-type" />
-        <meta
-          property="og:title"
-          content="The future home of The Netlabel Guide"
-          key="og-title"
-        />
+        <meta property="og:title" content="The Netlabel Guide" key="og-title" />
         <meta
           property="og:description"
           content={description}

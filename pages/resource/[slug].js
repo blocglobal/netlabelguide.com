@@ -17,7 +17,7 @@ const Resource = ({ resource }) => {
           href={`https://netlabelguide.com/resource/${resource.slug}`}
           key="canonical"
         />
-        <title>{resource.name}</title>
+        <title>{resource.name} page — The Netlabel Guide</title>
         <meta
           property="og:url"
           content={`https://netlabelguide.com/resource/${resource.slug}`}
@@ -25,7 +25,7 @@ const Resource = ({ resource }) => {
         />
         <meta
           property="og:title"
-          content={`${resource.name} page at The Netlabel Guide`}
+          content={`${resource.name} page — The Netlabel Guide`}
           key="og-title"
         />
       </Head>

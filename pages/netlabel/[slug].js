@@ -1,11 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import Genres from '../../components/Genres';
 import Urls from '../../components/Urls';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import getNetlabels from '../../utils/getNetlabels';
 import sluggify from '../../utils/sluggify';
 import capitalize from '../../utils/capitalize';
-import Breadcrumbs from '../../components/Breadcrumbs';
 
 const Netlabel = ({ netlabel }) => {
   return (
@@ -16,7 +17,7 @@ const Netlabel = ({ netlabel }) => {
           href={`https://netlabelguide.com/netlabel/${netlabel.slug}`}
           key="canonical"
         />
-        <title>{netlabel.label_name}</title>
+        <title>{netlabel.label_name} page — The Netlabel Guide</title>
         <meta
           property="og:url"
           content={`https://netlabelguide.com/netlabel/${netlabel.slug}`}
@@ -24,7 +25,7 @@ const Netlabel = ({ netlabel }) => {
         />
         <meta
           property="og:title"
-          content={`${netlabel.label_name} page at The Netlabel Guide`}
+          content={`${netlabel.label_name} page — The Netlabel Guide`}
           key="og-title"
         />
       </Head>
@@ -36,6 +37,7 @@ const Netlabel = ({ netlabel }) => {
       />
       <h1>{netlabel.label_name}</h1>
       <Urls urls={netlabel.urls} />
+      <Genres genres={netlabel.genres} />
       <p>
         <strong>Status:</strong> {capitalize(netlabel.activity_state)}
       </p>

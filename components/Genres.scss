@@ -1,0 +1,18 @@
+.Genres {
+  
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+
+    a {
+      display: inline-block;
+      background-color: #f3f3f3;
+      padding: .25rem .5rem;
+    }
+  }
+}

@@ -6,11 +6,7 @@ import './index.scss';
 
 const HomePage = () => {
   return (
-    <Layout
-      className="Home"
-      title="The future home of The Netlabel Guide"
-      hideTitle
-    >
+    <Layout className="Home" title="The Netlabel Guide" hideTitle>
       <Head>
         <link
           rel="canonical"

@@ -31,7 +31,7 @@ const Netlabels = ({ netlabels }) => {
           href="https://netlabelguide.com/netlabels"
           key="canonical"
         />
-        <title>Netlabels</title>
+        <title>Netlabel List — The Netlabel Guide</title>
         <meta
           property="og:url"
           content="https://netlabelguide.com/netlabels"
@@ -39,7 +39,7 @@ const Netlabels = ({ netlabels }) => {
         />
         <meta
           property="og:title"
-          content="The Netlabel Guide Netlabel List"
+          content="Netlabel List — The Netlabel Guide"
           key="og-title"
         />
       </Head>

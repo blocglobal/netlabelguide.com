@@ -3,8 +3,9 @@ import Head from 'next/head';
 import Layout from '../../components/Layout';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NetlabelList from '../../components/NetlabelList';
-import sluggify from '../../utils/sluggify';
 import getNetlabels from '../../utils/getNetlabels';
+import parseGenres from '../../utils/parseGenres';
+import filterNetlabelsByGenre from '../../utils/filterNetlabelsByGenre';
 
 const Genre = ({ genre, netlabels }) => {
   return (
@@ -30,6 +31,7 @@ const Genre = ({ genre, netlabels }) => {
       <Breadcrumbs
         links={[
           { href: '/netlabels', name: 'Netlabels' },
+          { href: '/netlabels/genres', name: 'Genres' },
           { href: `/genre/${genre.slug}`, name: genre.name },
         ]}
       />
@@ -41,15 +43,10 @@ const Genre = ({ genre, netlabels }) => {
 
 export async function getStaticPaths() {
   const netlabels = await getNetlabels();
-  let genres = [];
-
-  netlabels.filter(netlabel => {
-    netlabel.genres &&
-      netlabel.genres.map(g => genres.indexOf(g) === -1 && genres.push(g));
-  });
+  const genres = parseGenres(netlabels);
 
   const paths = genres.map(g => ({
-    params: { slug: sluggify(g) },
+    params: { slug: g.slug },
   }));
 
   return { paths, fallback: false };
@@ -57,37 +54,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const netlabels = await getNetlabels();
-
-  let genre;
-
-  netlabels.map(netlabel => {
-    netlabel.genres &&
-      netlabel.genres.map(g => {
-        if (sluggify(g) === params.slug) {
-          genre = g;
-        }
-      });
-  });
-
-  const filteredNetlabels = netlabels.filter(netlabel => {
-    let hasGenre = false;
-
-    netlabel.genres &&
-      netlabel.genres.map(genre => {
-        if (sluggify(genre) === params.slug) {
-          hasGenre = true;
-        }
-      });
-
-    return hasGenre;
-  });
+  const genre = parseGenres(netlabels, params.slug);
+  const filteredNetlabels = filterNetlabelsByGenre(netlabels, genre.slug);
 
   return {
     props: {
-      genre: {
-        name: genre,
-        slug: params.slug,
-      },
+      genre,
       netlabels: filteredNetlabels,
     },
   };

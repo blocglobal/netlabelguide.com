@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
-import Breadcrumbs from '../components/Breadcrumbs';
-import NetlabelList from '../components/NetlabelList';
-import NetlabelFilter from '../components/NetlabelFilter';
-import getNetlabels from '../utils/getNetlabels';
+import Layout from '../../components/Layout';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import NetlabelList from '../../components/NetlabelList';
+import NetlabelFilter from '../../components/NetlabelFilter';
+import getNetlabels from '../../utils/getNetlabels';
 
 const filter = (netlabels, status, filter = null) => {
   return netlabels.filter(netlabel => {

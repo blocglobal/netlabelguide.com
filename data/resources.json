@@ -126,6 +126,16 @@
       }
     },
     {
+      "name": "Netlabel Interview Project",
+      "slug": "netlabel-interview-project",
+      "description": "Blog focusing on interviewing netlabels with a commons set of questions in order to document the culture of netlabels.",
+      "type": "blog",
+      "urls": {
+        "homepage": "https://netlabelinterviewproject.wordpress.com",
+        "rss": "https://netlabelinterviewproject.wordpress.com/feed/"
+      }
+    },
+    {
       "name": "Netlabels.org",
       "slug": "netlabels-org",
       "description": "The original Netlabel information resource and guide which still features newly posted blog posts every now and then.",

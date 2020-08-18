@@ -20,6 +20,14 @@ const ReleaseList = ({ releases }) => {
           );
         })}
       </ul>
+      <p>
+        <strong>
+          If you’d like your netlabel to have a recent release list like the
+          above, please{' '}
+          <a href="https://blocsonic.com/contact">contact us here</a> and
+          provide us with an RSS feed url that only lists music releases.
+        </strong>
+      </p>
     </div>
   ) : null;
 };

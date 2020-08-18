@@ -1,0 +1,24 @@
+.NetlabelHeading {
+  display: block;
+  margin: .67em 0;
+
+  h1 {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .status {
+    border-radius: 2px;
+    vertical-align: bottom;
+    margin: 0 0 .75rem .5rem;
+    font-size: .75rem;
+    padding: 0 .5rem;
+    color: #fff;
+    display: inline-block;
+    background-color: #207549;
+
+    &.inactive {
+      background-color: #e3231d;
+    }
+  }
+}

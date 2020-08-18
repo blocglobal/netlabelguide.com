@@ -4,7 +4,7 @@ import './GenreList.scss';
 const GenreList = ({ genres = [], heading = false }) => {
   return (
     <div className="GenreList">
-      {heading && <h2>Genres</h2>}
+      {genres.length > 0 && heading && <h2>Genres</h2>}
       {genres.length > 0 && (
         <ul>
           {genres.map(genre => {

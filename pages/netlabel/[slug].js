@@ -1,17 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
+import Parser from 'rss-parser';
 import Layout from '../../components/Layout';
 import CountryList from '../../components/CountryList';
 import GenreList from '../../components/GenreList';
+import ReleaseList from '../../components/ReleaseList';
 import NetlabelHeading from '../../components/NetlabelHeading';
 import Urls from '../../components/Urls';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import getNetlabels from '../../utils/getNetlabels';
 import parseGenres from '../../utils/parseGenres';
 import sluggify from '../../utils/sluggify';
-import capitalize from '../../utils/capitalize';
+import urlKeys from '../../utils/urlKeys';
 
-const Netlabel = ({ netlabel }) => {
+const Netlabel = ({ netlabel, releases }) => {
   const genres = parseGenres([netlabel]);
 
   return (
@@ -48,6 +50,7 @@ const Netlabel = ({ netlabel }) => {
       <Urls urls={netlabel.urls} />
       <CountryList countries={netlabel.countries} />
       <GenreList genres={genres} heading />
+      <ReleaseList releases={releases} />
     </Layout>
   );
 };
@@ -62,6 +65,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const parser = new Parser();
   const netlabels = await getNetlabels();
   let netlabel;
 
@@ -71,9 +75,17 @@ export async function getStaticProps({ params }) {
     }
   });
 
+  let releases = null;
+
+  if (netlabel.urls && netlabel.urls[urlKeys.RELEASES]) {
+    const feed = await parser.parseURL(netlabel.urls[urlKeys.RELEASES]);
+    releases = feed.items;
+  }
+
   return {
     props: {
       netlabel,
+      releases,
     },
   };
 }

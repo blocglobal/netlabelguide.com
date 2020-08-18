@@ -12,4 +12,5 @@ export default {
   YOUTUBE: 'youtube',
   GOOGLE_PODCASTS: 'google-podcasts',
   APPLE_PODCASTS: 'apple-podcasts',
+  RELEASES: 'release_rss',
 };

@@ -1,7 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
+import CountryList from '../../components/CountryList';
 import GenreList from '../../components/GenreList';
+import NetlabelHeading from '../../components/NetlabelHeading';
 import Urls from '../../components/Urls';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import getNetlabels from '../../utils/getNetlabels';
@@ -38,12 +40,14 @@ const Netlabel = ({ netlabel }) => {
           { href: `/netlabel/${netlabel.slug}`, name: netlabel.label_name },
         ]}
       />
-      <h1>{netlabel.label_name}</h1>
+      <NetlabelHeading
+        name={netlabel.label_name}
+        status={netlabel.activity_state}
+      />
+      {netlabel.description && <p>{netlabel.description}</p>}
       <Urls urls={netlabel.urls} />
+      <CountryList countries={netlabel.countries} />
       <GenreList genres={genres} heading />
-      <p>
-        <strong>Status:</strong> {capitalize(netlabel.activity_state)}
-      </p>
     </Layout>
   );
 };

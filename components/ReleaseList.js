@@ -14,8 +14,12 @@ const ReleaseList = ({ releases }) => {
           const slug = sluggify(release.title);
           return (
             <li key={`release-${slug}`}>
-              <a href={release.link}>{release.title}</a> —{' '}
-              {dayjs(release.pubDate).format('MMMM Do, YYYY')}
+              <a href={release.link}>{release.title}</a>
+              {release.pubDate && (
+                <span>{` - ${dayjs(release.pubDate).format(
+                  'MMMM Do, YYYY'
+                )}`}</span>
+              )}
             </li>
           );
         })}
@@ -25,7 +29,8 @@ const ReleaseList = ({ releases }) => {
           If you’d like your netlabel to have a recent release list like the
           above, please{' '}
           <a href="https://blocsonic.com/contact">contact us here</a> and
-          provide us with an RSS feed url that only lists music releases.
+          provide us with an RSS feed url that only lists music releases. If you
+          have a bandcamp page, we also parse releases from there.
         </strong>
       </p>
     </div>

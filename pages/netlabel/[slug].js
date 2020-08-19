@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Parser from 'rss-parser';
 import Layout from '../../components/Layout';
 import CountryList from '../../components/CountryList';
 import GenreList from '../../components/GenreList';
@@ -10,8 +9,8 @@ import Urls from '../../components/Urls';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import getNetlabels from '../../utils/getNetlabels';
 import parseGenres from '../../utils/parseGenres';
+import parseReleases from '../../utils/parseReleases';
 import sluggify from '../../utils/sluggify';
-import urlKeys from '../../utils/urlKeys';
 
 const Netlabel = ({ netlabel, releases }) => {
   const genres = parseGenres([netlabel]);
@@ -65,7 +64,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const parser = new Parser();
   const netlabels = await getNetlabels();
   let netlabel;
 
@@ -75,12 +73,7 @@ export async function getStaticProps({ params }) {
     }
   });
 
-  let releases = null;
-
-  if (netlabel.urls && netlabel.urls[urlKeys.RELEASES]) {
-    const feed = await parser.parseURL(netlabel.urls[urlKeys.RELEASES]);
-    releases = feed.items;
-  }
+  const releases = await parseReleases(netlabel);
 
   return {
     props: {

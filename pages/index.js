@@ -15,8 +15,14 @@ const HomePage = () => {
         />
       </Head>
       <div className="hero">
-        The site is still currently under development, keep checking back for
-        the latest updates.
+        <p>
+          <strong>Update:</strong> We’ve begun adding recent release lists for
+          netlabels that have release focused RSS feeds. For labels that are
+          archived on Internet Archive, the feeds provided by that platform will
+          be used for these lists. We’re about halfway through the netlabel list
+          adding those archive.org feeds.
+        </p>
+        <p>More updates to come.</p>
       </div>
       <SpotlightResources />
     </Layout>

@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import he from 'he';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import sluggify from '../utils/sluggify';
 import './ReleaseList.scss';
@@ -14,7 +15,7 @@ const ReleaseList = ({ releases }) => {
           const slug = sluggify(release.title);
           return (
             <li key={`release-${slug}`}>
-              <a href={release.link}>{release.title}</a>
+              <a href={release.link}>{he.unescape(release.title)}</a>
               {release.pubDate && (
                 <span>{` - ${dayjs(release.pubDate).format(
                   'MMMM Do, YYYY'

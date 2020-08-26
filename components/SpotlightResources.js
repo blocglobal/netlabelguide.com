@@ -7,10 +7,10 @@ const selected = [
   'netlabel-day',
   'cc-community-music-awards',
   'ccmixter',
-  'internet-archive-netlabels',
   'netlabel-archive',
   'starfrosch-com',
   'netwaves-org',
+  'radio-brennpunkt',
   'rynothebearded-oo-top-10',
 ];
 

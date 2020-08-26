@@ -178,6 +178,15 @@
       "urls": {
         "homepage": "https://www.scene.org"
       }
+    },
+    {
+      "name": "Radio Brennpunkt",
+      "slug": "radio-brennpunkt",
+      "description": "Radio Brennpunkt is streaming Internet radio playing a mix of unusual music, sound art, live shows, and other fringe programming. All audio content is either in the public domain or presented with explicit permission from the creator or copyright holder.",
+      "type": "radio",
+      "urls": {
+        "homepage": "https://radiobrennpunkt.org"
+      }
     }
   ]
 }

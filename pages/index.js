@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import CommunityHappenings from '../components/CommunityHappenings';
 import SpotlightResources from '../components/SpotlightResources';
 import './index.scss';
 
@@ -17,7 +18,8 @@ const HomePage = () => {
       </Head>
       <div className="hero">
         <p>
-          <strong>Update:</strong> Added netlabels…{' '}
+          <strong>Update:</strong> Added new “Community Happenings” section to
+          homepage. Added netlabels…{' '}
           <Link href="/netlabel/soundsphere">
             <a>Soundsphere</a>
           </Link>
@@ -49,6 +51,7 @@ const HomePage = () => {
         </p>
         <p>More updates to come.</p>
       </div>
+      <CommunityHappenings />
       <SpotlightResources />
     </Layout>
   );

@@ -16,8 +16,9 @@ const HomePage = () => {
       </Head>
       <div className="hero">
         <p>
-          <strong>Update:</strong> All active netlabels that also have
-          archive.org collections now have a recent release lists.
+          <strong>Update:</strong> Added netlabels… Soundsphere, Secuencias
+          Temporales, Kellerloch, Micromusic and Still Heat Recordings. Changed
+          activity status of Happy Puppy Records and Subterranean Tide.
         </p>
         <p>More updates to come.</p>
       </div>

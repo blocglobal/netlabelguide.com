@@ -12,7 +12,7 @@ const HappeningList = () => {
           <h3>blocSonic netBloc Series</h3>
           <p>
             The 53rd volume of the #ccmusic compilation series is set to drop on
-            September 26th!
+            September 25th!
           </p>
           <p>
             <a href="https://blocsonic.com/releases/type/netblocs">

@@ -57,6 +57,218 @@
       "slug": "netlabel-archive",
       "description": "This important archive is dedicated to preserving the information and music of inactive netlabels. It features an extensive archive of Monotonik, one of the original netlabels which was active from 1996 to 2009.",
       "type": "archive",
+      "archived": [
+        {
+          "name": "Ansiform",
+          "url": "https://netlabelarchive.org/netlabels/ansiform/",
+          "location": "Canada",
+          "active": "2005-2009",
+          "genres": "Ambient"
+        },
+        {
+          "name": "Backtrack",
+          "url": "https://netlabelarchive.org/netlabels/backtrack/",
+          "location": "USA",
+          "active": "2004-2006",
+          "genres": "IDM, Electro, Ambient"
+        },
+        {
+          "name": "Candy Mind Records",
+          "url": "https://netlabelarchive.org/netlabels/candy-mind-records/",
+          "location": "Sweden",
+          "active": "2004-2007",
+          "genres": "Electro, IDM"
+        },
+        {
+          "name": "Comatronic",
+          "url": "https://netlabelarchive.org/netlabels/comatronic/",
+          "location": "Austria",
+          "active": "2004-2006",
+          "genres": "Techno, Minimal"
+        },
+        {
+          "name": "CutOff",
+          "url": "https://netlabelarchive.org/netlabels/cutoff/",
+          "location": null,
+          "active": "1997",
+          "genres": "Hip-Hop, D&B, House"
+        },
+        {
+          "name": "DarkWingDuck Records",
+          "url": "https://netlabelarchive.org/netlabels/darkwingduck-records/",
+          "location": "Ukraine",
+          "active": "2006-2013",
+          "genres": "8-Bit, Chiptune"
+        },
+        {
+          "name": "Dewtone",
+          "url": "https://netlabelarchive.org/netlabels/dewtone/",
+          "location": "Canada",
+          "active": "2004-2005",
+          "genres": "Ambient"
+        },
+        {
+          "name": "Eclectro",
+          "url": "https://netlabelarchive.org/netlabels/eclectro/",
+          "location": "Detroit, MI, USA",
+          "active": "2004",
+          "genres": "Electro"
+        },
+        {
+          "name": "Fairlight Music",
+          "url": "https://netlabelarchive.org/netlabels/fairlight-music/",
+          "location": "UK",
+          "active": "2001-2003",
+          "genres": "IDM, Downtempo, Chiptune"
+        },
+        {
+          "name": "File Freakout",
+          "url": "https://netlabelarchive.org/netlabels/file-freakout/",
+          "location": "Philadelphia, PA, USA",
+          "active": "2007-2008",
+          "genres": "8-Bit, Chiptune"
+        },
+        {
+          "name": "Filtro",
+          "url": "https://netlabelarchive.org/netlabels/filtro/",
+          "location": "Mexico",
+          "active": "2004-2007",
+          "genres": "Techno, Minimal, IDM, Dub"
+        },
+        {
+          "name": "Five Musicians",
+          "url": "https://netlabelarchive.org/netlabels/five-musicians/",
+          "location": "Finland",
+          "active": "1995-1999",
+          "genres": "IDM, Downtempo, Ambient"
+        },
+        {
+          "name": "Fridge",
+          "url": "https://netlabelarchive.org/netlabels/fridge/",
+          "location": "Germany",
+          "active": "1999-2000",
+          "genres": "Techno, Trance"
+        },
+        {
+          "name": "Laminim",
+          "url": "https://netlabelarchive.org/netlabels/laminim/",
+          "location": "Germany",
+          "active": "2005-2006",
+          "genres": "IDM, Techno, Minimal"
+        },
+        {
+          "name": "Maito Records",
+          "url": "https://netlabelarchive.org/netlabels/maito-records/",
+          "location": "Finland",
+          "active": "2011",
+          "genres": "Ambient, Electro"
+        },
+        {
+          "name": "Milk",
+          "url": "https://netlabelarchive.org/netlabels/milk/",
+          "location": "Finland",
+          "active": "1998-2001",
+          "genres": "IDM, Electro, Ambient"
+        },
+        {
+          "name": "Monotonik",
+          "url": "https://netlabelarchive.org/netlabels/monotonik/",
+          "location": "UK (1996-1999), USA (1999-2009)",
+          "active": "1996-2009",
+          "genres": "IDM, Downtempo, Ambient, Electro, D&B, Breakbeat"
+        },
+        {
+          "name": "mp3death",
+          "url": "https://netlabelarchive.org/netlabels/mp3death/",
+          "location": "USA",
+          "active": "2003-2013, 2018",
+          "genres": "Chiptune, 8-Bit, Experimental, Noise"
+        },
+        {
+          "name": "Natural Media",
+          "url": "https://netlabelarchive.org/netlabels/natural-media/",
+          "location": "Argentina",
+          "active": "2005-2009",
+          "genres": "Ambient, Experimental, IDM"
+        },
+        {
+          "name": "Noiz Phaktah",
+          "url": "https://netlabelarchive.org/netlabels/noiz-phaktah/",
+          "location": "Australia",
+          "active": "2001-2002",
+          "genres": "Breakcore, Hardcore, IDM"
+        },
+        {
+          "name": "Nubiproof",
+          "url": "https://netlabelarchive.org/netlabels/nubiproof/",
+          "location": "Germany",
+          "active": "2001-2002",
+          "genres": "Electro, IDM"
+        },
+        {
+          "name": "Ogredung",
+          "url": "https://netlabelarchive.org/netlabels/ogredung/",
+          "location": "Italy",
+          "active": "2001-2007",
+          "genres": "IDM, Electro"
+        },
+        {
+          "name": "One",
+          "url": "https://netlabelarchive.org/netlabels/one/",
+          "location": "Louisville, KY, USA",
+          "active": "2004-2007",
+          "genres": "IDM, Electro"
+        },
+        {
+          "name": "Petite&Jolie",
+          "url": "https://netlabelarchive.org/netlabels/petite-and-jolie/",
+          "location": "France",
+          "active": "2007-2010",
+          "genres": "IDM"
+        },
+        {
+          "name": "Random Playing Records",
+          "url": "https://netlabelarchive.org/netlabels/randomplayingrecords/",
+          "location": null,
+          "active": "1998",
+          "genres": "IDM"
+        },
+        {
+          "name": "Voodoo",
+          "url": "https://netlabelarchive.org/netlabels/voodoo/",
+          "location": "Finland",
+          "active": "1997-2002",
+          "genres": "IDM, Downtempo, Hip-Hop"
+        },
+        {
+          "name": "W.T.F. Records",
+          "url": "https://netlabelarchive.org/netlabels/wtf-records/",
+          "location": "Japan",
+          "active": "2010-2013",
+          "genres": "Happy Hardcore, Gabber, Hardcore, Breakcore"
+        },
+        {
+          "name": "Wasamix",
+          "url": "https://netlabelarchive.org/netlabels/wasamix/",
+          "location": "UK",
+          "active": "2010",
+          "genres": "House, Ambient"
+        },
+        {
+          "name": "Weltherrschaft",
+          "url": "https://netlabelarchive.org/netlabels/weltherrschaft/",
+          "location": "Germany",
+          "active": "2002-2003",
+          "genres": "Techno, IDM, D&B"
+        },
+        {
+          "name": "Yuki Yaki",
+          "url": "https://netlabelarchive.org/netlabels/yuki-yaki/",
+          "location": "Germany",
+          "active": "2005-2010",
+          "genres": "Techno, Minimal, IDM, Ambient"
+        }
+      ],
       "urls": {
         "homepage": "https://netlabelarchive.org",
         "twitter": "https://twitter.com/NetlabelArchive",

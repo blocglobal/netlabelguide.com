@@ -5,6 +5,7 @@ import capitalize from '../../utils/capitalize';
 import resourceData from '../../data/resources.json';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Urls from '../../components/Urls';
+import ArchivedNetlabels from '../../components/ArchivedNetlabels';
 
 const resources = resourceData.resources;
 
@@ -41,6 +42,9 @@ const Resource = ({ resource }) => {
       </p>
       <p>{resource.description}</p>
       <Urls urls={resource.urls} />
+      {resource.slug === 'netlabel-archive' && (
+        <ArchivedNetlabels archived={resource.archived} />
+      )}
     </Layout>
   );
 };

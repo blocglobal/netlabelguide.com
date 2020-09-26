@@ -11,12 +11,11 @@ const HappeningList = () => {
         <div class="information">
           <h3>blocSonic netBloc Series</h3>
           <p>
-            The 53rd volume of the #ccmusic compilation series is set to drop on
-            September 25th!
+            The 53rd volume of the #ccmusic compilation series is available now!
           </p>
           <p>
-            <a href="https://blocsonic.com/releases/type/netblocs">
-              Visit blocSonic.com for netBlocs
+            <a href="https://blocsonic.com/releases/various-artists/netbloc-vol-53-bang-plunk-squelch-thump">
+              Visit blocSonic.com to download it!
             </a>
           </p>
         </div>
@@ -30,7 +29,7 @@ const HappeningList = () => {
           <h3>Netlabel Archive</h3>
           <p>
             Currently working on archiving the following inactive netlabels:
-            Laminim, Power Glove Records &amp; more…
+            Power Glove Records, Knobs &amp; more…
           </p>
           <p>
             <a href="https://netlabelarchive.org/">

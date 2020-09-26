@@ -18,36 +18,10 @@ const HomePage = () => {
       </Head>
       <div className="hero">
         <p>
-          <strong>Update:</strong> Added new “Community Happenings” section to
-          homepage. Added netlabels…{' '}
-          <Link href="/netlabel/soundsphere">
-            <a>Soundsphere</a>
+          <strong>Update:</strong> Added archived netlabels listing to{' '}
+          <Link href="/resource/netlabel-archive/">
+            <a>Netlabel Archive resource page</a>
           </Link>
-          ,{' '}
-          <Link href="/netlabel/secuencias-temporales">
-            <a>Secuencias Temporales</a>
-          </Link>
-          ,{' '}
-          <Link href="/netlabel/kellerloch">
-            <a>Kellerloch</a>
-          </Link>
-          ,{' '}
-          <Link href="/netlabel/micromusic">
-            <a>Micromusic</a>
-          </Link>{' '}
-          and{' '}
-          <Link href="/netlabel/still-heat-recordings">
-            <a>Still Heat Recordings</a>
-          </Link>
-          . Changed activity status of
-          <Link href="/netlabel/happy-puppy-records">
-            <a>Happy Puppy Records</a>
-          </Link>{' '}
-          and{' '}
-          <Link href="/netlabel/subterranean-tide">
-            <a>Subterranean Tide</a>
-          </Link>
-          .
         </p>
         <p>More updates to come.</p>
       </div>

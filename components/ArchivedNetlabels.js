@@ -1,3 +1,4 @@
+import urlKeys from '../utils/urlKeys';
 import './ArchivedNetlabels.scss';
 
 const ArchivedNetlabels = ({ archived = [] }) => {
@@ -7,22 +8,24 @@ const ArchivedNetlabels = ({ archived = [] }) => {
       <div className="netlabels">
         {archived.map(netlabel => {
           return (
-            <ul key={`netlabel-${netlabel.name}`}>
+            <ul key={`netlabel-${netlabel.label_name}`}>
               <li>
                 <h3>
-                  <a href={netlabel.url}>{netlabel.name}</a>
+                  <a href={netlabel.urls[urlKeys.NETLABEL_ARCHIVE]}>
+                    {netlabel.label_name}
+                  </a>
                 </h3>
               </li>
-              {netlabel.location && (
+              {netlabel.countries?.length && (
                 <li>
-                  <strong>Location:</strong> {netlabel.location}
+                  <strong>Location:</strong> {netlabel.countries.join(', ')}
                 </li>
               )}
               <li>
-                <strong>Years Active:</strong> {netlabel.active}
+                <strong>Years Active:</strong> {netlabel.years_active}
               </li>
               <li>
-                <strong>Genres:</strong> {netlabel.genres}
+                <strong>Genres:</strong> {netlabel.genres.join(', ')}
               </li>
             </ul>
           );

@@ -50,6 +50,11 @@ const Urls = ({ urls = [] }) => {
           <IconLink href={urls[urlKeys.FMA]} />
         </li>
       )}
+      {urls[urlKeys.NETLABEL_ARCHIVE] && (
+        <li>
+          <IconLink href={urls[urlKeys.NETLABEL_ARCHIVE]} />
+        </li>
+      )}
       {urls[urlKeys.ARCHIVE] && (
         <li>
           <IconLink href={urls[urlKeys.ARCHIVE]} />

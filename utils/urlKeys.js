@@ -7,6 +7,7 @@ export default {
   TWITTER: 'twitter',
   SITE: 'homepage',
   FMA: 'free_music_archive',
+  NETLABEL_ARCHIVE: 'netlabel_archive',
   ARCHIVE: 'internet_archive',
   INSTAGRAM: 'instagram',
   YOUTUBE: 'youtube',

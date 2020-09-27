@@ -6,10 +6,12 @@ import resourceData from '../../data/resources.json';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Urls from '../../components/Urls';
 import ArchivedNetlabels from '../../components/ArchivedNetlabels';
+import getNetlabels from '../../utils/getNetlabels';
+import filterNetlabelsByNetlabelArchive from '../../utils/filterNetlabelsByNetlabelArchive';
 
 const resources = resourceData.resources;
 
-const Resource = ({ resource }) => {
+const Resource = ({ resource, netlabels = null }) => {
   return (
     <Layout className="Resource" header="inner">
       <Head>
@@ -42,9 +44,7 @@ const Resource = ({ resource }) => {
       </p>
       <p>{resource.description}</p>
       <Urls urls={resource.urls} />
-      {resource.slug === 'netlabel-archive' && (
-        <ArchivedNetlabels archived={resource.archived} />
-      )}
+      {netlabels && <ArchivedNetlabels archived={netlabels} />}
     </Layout>
   );
 };
@@ -59,6 +59,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   let resource;
+  let props = {};
 
   resources.map(r => {
     if (r.slug === params.slug) {
@@ -66,10 +67,15 @@ export async function getStaticProps({ params }) {
     }
   });
 
+  props.resource = resource;
+
+  if (resource.slug === 'netlabel-archive') {
+    let netlabels = await getNetlabels();
+    props.netlabels = filterNetlabelsByNetlabelArchive(netlabels);
+  }
+
   return {
-    props: {
-      resource,
-    },
+    props: props,
   };
 }
 

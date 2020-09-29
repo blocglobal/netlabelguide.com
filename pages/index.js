@@ -18,9 +18,9 @@ const HomePage = () => {
       </Head>
       <div className="hero">
         <p>
-          <strong>Update:</strong> Added archived netlabels listing to{' '}
-          <Link href="/resource/netlabel-archive/">
-            <a>Netlabel Archive resource page</a>
+          <strong>Update:</strong> Added more resources to the{' '}
+          <Link href="/resources/">
+            <a>resource page</a>
           </Link>
         </p>
         <p>More updates to come.</p>

@@ -198,6 +198,53 @@
         "rss": "https://feeds.feedburner.com/cctrax",
         "twitter": "https://twitter.com/deeload"
       }
+    },
+    {
+      "name": "Ojdo",
+      "slug": "ojdo",
+      "description": "Music reviews, desktop wallpapers and computer how-to articles. Only Creative Commons content.",
+      "type": "blog",
+      "urls": {
+        "homepage": "https://www.ojdo.de",
+        "rss": "https://www.ojdo.de/wp/feed/",
+        "twitter": "https://twitter.com/ojdo_"
+      }
+    },
+    {
+      "name": "Ziklibrenbib",
+      "slug": "ziklibrenbib",
+      "description": "A collaborative blog dedicated to free distribution of music. In french.",
+      "type": "blog",
+      "urls": {
+        "homepage": "http://www.acim.asso.fr/ziklibrenbib/",
+        "rss": "http://www.acim.asso.fr/ziklibrenbib/feed/",
+        "twitter": "https://twitter.com/ziklibrenbib",
+        "facebook": "https://www.facebook.com/Ziklibrenbib",
+        "youtube": "http://www.youtube.com/user/ziklibrenbib",
+        "soundcloud": "http://soundcloud.com/ziklibrenbib"
+      }
+    },
+    {
+      "name": "Notable Netlabel releases and Illusory",
+      "slug": "notable-netlabel-releases-illusory",
+      "description": "Blog to support Creative Commons musicians and netlabels",
+      "type": "blog",
+      "urls": {
+        "homepage": "http://www.jmlowery.com/",
+        "rss": "http://www.jmlowery.com/feeds/posts/default?alt=rss"
+      }
+    },
+    {
+      "name": "Bass and Space",
+      "slug": "bass-space",
+      "description": "Some pearls out of the ocean of netlabel releases",
+      "type": "blog",
+      "urls": {
+        "homepage": "https://bassandspace.com",
+        "rss": "https://bassandspace.com/feed/",
+        "facebook": "https://www.facebook.com/bassandspace",
+        "twitter": "https://twitter.com/BassAndSpace"
+      }
     }
   ]
 }

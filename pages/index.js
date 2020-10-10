@@ -18,12 +18,15 @@ const HomePage = () => {
       </Head>
       <div className="hero">
         <p>
-          <strong>Update:</strong> Added more resources to the{' '}
+          <strong>Update:</strong> Added <strong>Nenormalizm</strong> to{' '}
+          <Link href="/netlabels/">
+            <a>netlabels</a>
+          </Link>{' '}
+          and a few more resources to the{' '}
           <Link href="/resources/">
             <a>resource page</a>
           </Link>
         </p>
-        <p>More updates to come.</p>
       </div>
       <CommunityHappenings />
       <SpotlightResources />

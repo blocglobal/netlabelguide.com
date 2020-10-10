@@ -245,6 +245,68 @@
         "facebook": "https://www.facebook.com/bassandspace",
         "twitter": "https://twitter.com/BassAndSpace"
       }
+    },
+    {
+      "name": "Soundshiva",
+      "slug": "soundshiva",
+      "description": "Soundshiva is open non-commercial netaudio catalogue. Mission is to help netlabels and artists to share and distribute free music, and for fans to discover and enjoy it.",
+      "type": "catalog",
+      "urls": {
+        "homepage": "https://www.soundshiva.net",
+        "facebook": "https://www.facebook.com/soundshiva.net",
+        "soundcloud": "https://soundcloud.com/soundshiva"
+      }
+    },
+    {
+      "name": "freemus.net",
+      "slug": "freemus",
+      "description": "Blog promoting creative commons music and netlabel releases.",
+      "type": "blog",
+      "urls": {
+        "homepage": "https://freemus.net/",
+        "rss": "https://freemus.net/publ/rss",
+        "facebook": "https://www.facebook.com/groups/freemus/",
+        "twitter": "https://twitter.com/freemusnet",
+        "youtube": "https://www.youtube.com/channel/UCpO3Z1b4FxX2Cyy2c-I4DXQ"
+      }
+    },
+    {
+      "name": "Netlabelcovers",
+      "slug": "netlabelcovers",
+      "description": "Outstanding Covers from Netlabels / Netaudio releases",
+      "type": "blog",
+      "urls": {
+        "homepage": "https://netlabelcovers.tumblr.com/",
+        "rss": "https://netlabelcovers.tumblr.com/rss"
+      }
+    },
+    {
+      "name": "El cant de la xitxarra",
+      "slug": "el-cant-xitxarra",
+      "description": "Radioshow featuring netaudio music. In euskera.",
+      "type": "radio",
+      "urls": {
+        "homepage": "http://www.upv.es/rtv/radio/el-cant-de-la-xitxarra"
+      }
+    },
+    {
+      "name": "Recent Music Heroes",
+      "slug": "recent-music-heroes",
+      "description": "Reviews of music for free download.",
+      "type": "blog",
+      "urls": {
+        "homepage": "https://agier.blogspot.com/",
+        "rss": "https://agier.blogspot.com/feeds/posts/default?alt=rss"
+      }
+    },
+    {
+      "name": "Jumbly music",
+      "slug": "jumbly-music",
+      "description": "Youtube channel for sessions of any genre, any style. As long as it can be available to the listener for free download.",
+      "type": "youtube",
+      "urls": {
+        "youtube": "https://www.youtube.com/channel/UCuMxsLkaQSpuo-z0F3DJIzw/"
+      }
     }
   ]
 }

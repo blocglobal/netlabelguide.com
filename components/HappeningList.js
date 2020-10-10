@@ -8,7 +8,7 @@ const HappeningList = () => {
           src="/happenings/blocsonic-bscomp0053.jpg"
           alt="Cover of forthcoming blocSonic release netBloc Vol. 53: Bang, Plunk, Squelch &amp; Thump"
         />
-        <div class="information">
+        <div className="information">
           <h3>blocSonic netBloc Series</h3>
           <p>
             The 53rd volume of the #ccmusic compilation series is available now!
@@ -29,7 +29,7 @@ const HappeningList = () => {
           <h3>Netlabel Archive</h3>
           <p>
             Currently working on archiving the following inactive netlabels:
-            Power Glove Records, Knobs &amp; more…
+            Knobs, Retrofuturism &amp; more…
           </p>
           <p>
             <a href="https://netlabelarchive.org/">

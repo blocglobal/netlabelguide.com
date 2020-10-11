@@ -38,6 +38,22 @@ const HappeningList = () => {
           </p>
         </div>
       </div>
+      <div className="happening about">
+        <div className="information">
+          <div>
+            <h3>Have something we should include in this space?</h3>
+            <p>
+              If you run one of the resources included on our resource list and
+              you have something going on, give us details and we can add it!
+            </p>
+            <p>
+              <a href="https://blocsonic.com/contact" className="btn">
+                Let us know about your happening!
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

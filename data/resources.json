@@ -307,6 +307,27 @@
       "urls": {
         "youtube": "https://www.youtube.com/channel/UCuMxsLkaQSpuo-z0F3DJIzw/"
       }
+    },
+    {
+      "name": "Pete Cogle’s Podcast Factory",
+      "slug": "pete-cogles-podcast-factory",
+      "description": "Pete Cogle has been podcasting since January 2006, specialising in Netlabels and Creative Commons music. PCPodcast is a weekly show that plays all types of music from all over the world. The Dub Zone is a monthly show focusing dub reggae.",
+      "type": "podcast",
+      "urls": {
+        "homepage": "http://petecogle.com",
+        "rss": "http://petecogle.co.uk/blog/feed/",
+        "youtube": "https://www.youtube.com/user/pcpodcast"
+      }
+    },
+    {
+      "name": "noCo...mment",
+      "slug": "noco-mment",
+      "description": "Blog that features about 800 reviews of netaudio releases",
+      "type": "blog",
+      "urls": {
+        "homepage": "http://massard3.blogspot.com",
+        "rss": "http://massard3.blogspot.com/feeds/posts/default?alt=rss"
+      }
     }
   ]
 }

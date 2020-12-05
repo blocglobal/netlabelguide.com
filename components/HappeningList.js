@@ -29,7 +29,7 @@ const HappeningList = () => {
           <h3>Netlabel Archive</h3>
           <p>
             Currently working on archiving the following inactive netlabels:
-            Knobs, Retrofuturism &amp; more…
+            Retrofuturism, CatchyNameRecords &amp; more…
           </p>
           <p>
             <a href="https://netlabelarchive.org/">

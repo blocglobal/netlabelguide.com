@@ -27,10 +27,7 @@ const HappeningList = () => {
         />
         <div class="information">
           <h3>Netlabel Archive</h3>
-          <p>
-            Currently working on archiving the following inactive netlabels:
-            Retrofuturism, CatchyNameRecords &amp; more…
-          </p>
+          <p>Currently working on adding artist profiles…</p>
           <p>
             <a href="https://netlabelarchive.org/">
               Visit Netlabel Archive to discover

@@ -5,17 +5,18 @@ const HappeningList = () => {
     <div className="HappeningList">
       <div className="happening">
         <img
-          src="/happenings/blocsonic-bscomp0054.jpg"
-          alt="Cover of blocSonic release netBloc Vol. 54: Goodbye 2020"
+          src="/happenings/blocsonic-bscomp0055.jpg"
+          alt="Cover of forthcoming blocSonic release netBloc Vol. 55: Cultural Constant"
         />
-        <div className="information">
+        <div class="information">
           <h3>blocSonic netBloc Series</h3>
           <p>
-            The 54th volume of the #ccmusic compilation series is available now!
+            Volume 55 of the #ccmusic compilation series is set to drop March 26
+            <sup>th</sup>!
           </p>
           <p>
-            <a href="https://blocsonic.com/releases/various-artists/netbloc-vol-54-goodbye-2020">
-              Visit blocSonic.com to download it!
+            <a href="https://blocsonic.com/releases/type/netblocs">
+              Visit blocSonic.com for netBlocs
             </a>
           </p>
         </div>

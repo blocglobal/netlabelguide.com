@@ -18,13 +18,9 @@ const HomePage = () => {
       </Head>
       <div className="hero">
         <p>
-          <strong>Update:</strong> Updated{' '}
-          <Link href="/netlabel/bonimedia">
-            <a>BONImedia</a>
-          </Link>{' '}
-          and{' '}
-          <Link href="/resource/netlabel-archive">
-            <a>Netlabel Archive</a>
+          <strong>Update:</strong> Added{' '}
+          <Link href="/netlabel/sub65">
+            <a>sub65</a>
           </Link>
         </p>
       </div>

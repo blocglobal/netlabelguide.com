@@ -19,9 +19,10 @@ const HomePage = () => {
       <div className="hero">
         <p>
           <strong>Update:</strong> Added{' '}
-          <Link href="/netlabel/sub65">
-            <a>sub65</a>
-          </Link>
+          <Link href="/netlabel/fullmoon-records">
+            <a>Fullmoon Records</a>
+          </Link>{' '}
+          and <Link href="/netlabel/nul-tiel-records">Nul Tiel Records</Link>
         </p>
       </div>
       <CommunityHappenings />

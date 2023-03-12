@@ -11,10 +11,10 @@ const ReleaseList = ({ releases }) => {
     <div className="ReleaseList">
       <h2>Recent Releases</h2>
       <ul>
-        {releases.map(release => {
+        {releases.map((release, index) => {
           const slug = sluggify(release.title);
           return (
-            <li key={`release-${slug}`}>
+            <li key={`release-${slug}-${index}`}>
               <a href={release.link}>{he.unescape(release.title)}</a>
               {release.pubDate && (
                 <span>{` - ${dayjs(release.pubDate).format(

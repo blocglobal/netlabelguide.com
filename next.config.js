@@ -1,4 +1,3 @@
-const withSass = require("@zeit/next-sass");
-module.exports = withSass({
-  exportTrailingSlash: true,
-});
+module.exports = {
+  /* config options here */
+};

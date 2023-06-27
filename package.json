@@ -19,14 +19,12 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@primer/octicons-react": "^10.0.0",
-    "@zeit/next-sass": "^1.0.1",
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "classnames": "^2.2.6",
     "dayjs": "^1.8.33",
     "he": "^1.2.0",
-    "next": "^9.5.1",
-    "node-sass": "^4.14.1",
+    "next": "^9.5.5",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -37,6 +35,6 @@
     "truncate": "^2.1.0"
   },
   "devDependencies": {
-    "@cloudflare/wrangler": "^1.10.3"
+    "wrangler": "^3.1.1"
   }
 }

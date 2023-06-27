@@ -3,7 +3,6 @@ import Header from './Header';
 import HeaderInner from './HeaderInner';
 import Nav from './Nav';
 import Footer from './Footer';
-import './Layout.scss';
 
 const Layout = ({
   title,

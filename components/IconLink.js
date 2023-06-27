@@ -11,7 +11,6 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { faRss, faGlobe, faLink } from '@fortawesome/free-solid-svg-icons';
-import './IconLink.scss';
 
 const IconLink = ({ href, icon = null, text = null }) => {
   const label = text ? text : href;

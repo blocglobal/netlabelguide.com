@@ -1,5 +1,4 @@
 import HappeningList from './HappeningList';
-import './CommunityHappenings.scss';
 
 const CommunityHappenings = () => {
   return (

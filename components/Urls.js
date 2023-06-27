@@ -1,6 +1,5 @@
 import IconLink from './IconLink';
 import urlKeys from '../utils/urlKeys';
-import './Urls.scss';
 
 const Urls = ({ urls = [] }) => {
   return (

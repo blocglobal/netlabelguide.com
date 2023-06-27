@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import truncate from 'truncate';
 import capitalize from '../utils/capitalize';
-import './ResourceList.scss';
 
 const ResourceList = ({ resources }) => {
   return (

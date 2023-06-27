@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import CharacterList from './CharacterList';
-import './NetlabelList.scss';
 
 const chars = '#abcdefghijklmnopqrstuvwxyz';
 

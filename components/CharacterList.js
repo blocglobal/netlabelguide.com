@@ -1,5 +1,3 @@
-import './CharacterList.scss';
-
 const itemFirstCharacterMatches = (item, character) => {
   return (
     item.charAt(0).toLowerCase() === character ||

@@ -1,6 +1,5 @@
 import classnames from 'classnames';
 import capitalize from '../utils/capitalize';
-import './NetlabelHeading.scss';
 
 const NetlabelHeading = ({ name, status }) => {
   return (

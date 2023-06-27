@@ -1,5 +1,4 @@
 import urlKeys from '../utils/urlKeys';
-import './ArchivedNetlabels.scss';
 
 const ArchivedNetlabels = ({ archived = [] }) => {
   return (

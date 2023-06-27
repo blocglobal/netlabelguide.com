@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import HorizontalLogo from './HorizontalLogo';
-import './HeaderInner.scss';
 
 const HeaderInner = () => {
   return (

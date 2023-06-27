@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import ResourceList from './ResourceList';
 import resourceData from '../data/resources.json';
-import './SpotlightResources.scss';
 
 const selected = [
   'netlabel-day',

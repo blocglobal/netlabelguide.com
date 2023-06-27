@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import './Breadcrumbs.scss';
 
 const Breadcrumbs = ({ links = [] }) => {
   let position = 2;

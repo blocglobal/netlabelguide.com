@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import classnames from 'classnames';
-import './NetlabelFilter.scss';
 
 const NetlabelFilter = ({ status, inputValue, onChange }) => {
   return (

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import './GenreList.scss';
 
 const GenreList = ({ genres = [], heading = false }) => {
   return (

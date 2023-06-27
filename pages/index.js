@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Layout from '../components/Layout';
 import CommunityHappenings from '../components/CommunityHappenings';
 import SpotlightResources from '../components/SpotlightResources';
-import './index.scss';
 
 const HomePage = () => {
   return (

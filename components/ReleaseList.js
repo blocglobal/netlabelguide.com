@@ -2,7 +2,6 @@ import dayjs from 'dayjs';
 import he from 'he';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import sluggify from '../utils/sluggify';
-import './ReleaseList.scss';
 
 dayjs.extend(advancedFormat);
 

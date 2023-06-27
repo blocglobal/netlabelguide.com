@@ -1,5 +1,4 @@
 import sluggify from '../utils/sluggify';
-import './CountryList.scss';
 
 const CountryList = ({ countries }) => {
   return countries && countries.length > 0 ? (

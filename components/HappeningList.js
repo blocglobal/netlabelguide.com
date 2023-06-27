@@ -1,5 +1,3 @@
-import './HappeningList.scss';
-
 const HappeningList = () => {
   return (
     <div className="HappeningList">
@@ -8,7 +6,7 @@ const HappeningList = () => {
           src="/happenings/blocsonic-bscomp0056.jpg"
           alt="Cover of blocSonic release netBloc Vol. 56: Keep Unknown"
         />
-        <div class="information">
+        <div className="information">
           <h3>blocSonic netBloc Series</h3>
           <p>
             Volume 56 of the long-running #ccmusic compilation series is out
@@ -26,7 +24,7 @@ const HappeningList = () => {
           src="/happenings/netlabel-archive-happening.svg"
           alt="Netlabel Archive logo"
         />
-        <div class="information">
+        <div className="information">
           <h3>Netlabel Archive</h3>
           <p>Currently working on adding artist profiles…</p>
           <p>

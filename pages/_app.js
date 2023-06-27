@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
-import config from '../ngconfig.js';
 import './_app.scss';
 import '../components/CommunityHappenings.scss';
 import '../components/Footer.scss';
@@ -25,13 +24,6 @@ import '../components/ReleaseList.scss';
 import '../components/Urls.scss';
 import '../components/ArchivedNetlabels.scss';
 import './index.scss';
-
-function injectGA() {
-  return {
-    __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${config.ga}');
-  `,
-  };
-}
 
 const App = ({ Component, pageProps }) => {
   const description =
@@ -96,11 +88,6 @@ const App = ({ Component, pageProps }) => {
           content="https://netlabelguide.com/img/netlabelguide.png"
           key="og-image"
         />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${config.ga}`}
-        ></script>
-        <script dangerouslySetInnerHTML={injectGA()} />
       </Head>
       <Component {...pageProps} />
     </Fragment>

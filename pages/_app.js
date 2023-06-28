@@ -1,29 +1,6 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
 import './_app.scss';
-import '../components/CommunityHappenings.scss';
-import '../components/Footer.scss';
-import '../components/HappeningList.scss';
-import '../components/Header.scss';
-import '../components/HeaderInner.scss';
-import '../components/HorizontalLogo.scss';
-import '../components/IconLink.scss';
-import '../components/Layout.scss';
-import '../components/Logo.scss';
-import '../components/Nav.scss';
-import '../components/ResourceList.scss';
-import '../components/SpotlightResources.scss';
-import '../components/Breadcrumbs.scss';
-import '../components/CharacterList.scss';
-import '../components/NetlabelFilter.scss';
-import '../components/NetlabelList.scss';
-import '../components/CountryList.scss';
-import '../components/GenreList.scss';
-import '../components/NetlabelHeading.scss';
-import '../components/ReleaseList.scss';
-import '../components/Urls.scss';
-import '../components/ArchivedNetlabels.scss';
-import './index.scss';
 
 const App = ({ Component, pageProps }) => {
   const description =

@@ -1,17 +1,16 @@
 import Link from 'next/link';
 import truncate from 'truncate';
 import capitalize from '../utils/capitalize';
+import styles from './ResourceList.module.scss';
 
 const ResourceList = ({ resources }) => {
   return (
-    <div className="ResourceList">
+    <div className={styles.ResourceList}>
       {resources.map(resource => {
         return (
-          <div key={`resource-${resource.slug}`} className="resource">
+          <div key={`resource-${resource.slug}`} className={styles.Resource}>
             <h3>
-              <Link href={`/resource/${resource.slug}`}>
-                <a>{resource.name}</a>
-              </Link>
+              <Link href={`/resource/${resource.slug}`}>{resource.name}</Link>
             </h3>
             <p>{truncate(resource.description, 100)}</p>
             <p>

@@ -1,12 +1,16 @@
 import classnames from 'classnames';
 import capitalize from '../utils/capitalize';
+import styles from './NetlabelHeading.module.scss';
 
 const NetlabelHeading = ({ name, status }) => {
   return (
-    <div className="NetlabelHeading">
+    <div className={styles.NetlabelHeading}>
       <h1>{name}</h1>
       <span
-        className={classnames('status', { inactive: status === 'inactive' })}
+        className={classnames(
+          styles.status,
+          status === 'inactive' && styles.inactive
+        )}
       >
         {capitalize(status)}
       </span>

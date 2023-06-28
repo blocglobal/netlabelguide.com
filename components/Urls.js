@@ -1,9 +1,10 @@
 import IconLink from './IconLink';
 import urlKeys from '../utils/urlKeys';
+import styles from './Urls.module.scss';
 
 const Urls = ({ urls = [] }) => {
   return (
-    <ul className="Urls">
+    <ul className={styles.Urls}>
       {urls[urlKeys.SITE] && urls[urlKeys.BANDCAMP] !== urls[urlKeys.SITE] && (
         <li>
           <IconLink icon="globe" href={urls[urlKeys.SITE]} />

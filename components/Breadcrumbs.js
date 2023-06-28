@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import styles from './Breadcrumbs.module.scss';
 
 const Breadcrumbs = ({ links = [] }) => {
   let position = 2;
@@ -6,23 +7,19 @@ const Breadcrumbs = ({ links = [] }) => {
     <ol
       vocab="http://schema.org/"
       typeof="BreadcrumbList"
-      className="Breadcrumbs"
+      className={styles.Breadcrumbs}
     >
       <li property="itemListElement" typeof="ListItem">
-        <Link href="/">
-          <a property="item" typeof="WebPage">
-            <span property="name">Home</span>
-          </a>
+        <Link href="/" property="item" typeof="WebPage">
+          <span property="name">Home</span>
         </Link>
         <meta property="position" content="1" />
       </li>
       {links.map(link => {
         const linkEl = (
           <li property="itemListElement" typeof="ListItem" key={link.href}>
-            <Link href={link.href}>
-              <a property="item" typeof="WebPage">
-                <span property="name">{link.name}</span>
-              </a>
+            <Link href={link.href} property="item" typeof="WebPage">
+              <span property="name">{link.name}</span>
             </Link>
             <meta property="position" content={position} />
           </li>

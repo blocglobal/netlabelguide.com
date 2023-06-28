@@ -1,8 +1,9 @@
 import sluggify from '../utils/sluggify';
+import styles from './CountryList.module.scss';
 
 const CountryList = ({ countries }) => {
   return countries && countries.length > 0 ? (
-    <div className="CountryList">
+    <div className={styles.CountryList}>
       <h2>{countries.length > 1 ? 'Countries' : 'Country'}</h2>
       <ul>
         {countries.map(country => {

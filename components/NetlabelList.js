@@ -1,17 +1,16 @@
 import Link from 'next/link';
 import CharacterList from './CharacterList';
+import styles from './NetlabelList.module.scss';
 
 const chars = '#abcdefghijklmnopqrstuvwxyz';
 
 const NetlabelList = ({ netlabels }) => {
   const handlerRenderItem = item => (
-    <Link href={`/netlabel/${item.slug}`}>
-      <a>{item.label_name}</a>
-    </Link>
+    <Link href={`/netlabel/${item.slug}`}>{item.label_name}</Link>
   );
 
   return (
-    <div className="NetlabelList">
+    <div className={styles.NetlabelList}>
       {netlabels.length &&
         chars.split('').map(char => {
           return (
@@ -25,7 +24,7 @@ const NetlabelList = ({ netlabels }) => {
             />
           );
         })}
-      <div className="credit">
+      <div className={styles.Credit}>
         <p>
           <strong>List source:</strong>{' '}
           <a href="https://github.com/timpulver/netlabel-list">

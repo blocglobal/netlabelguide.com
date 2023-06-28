@@ -1,3 +1,5 @@
+import styles from './CharacterList.module.scss';
+
 const itemFirstCharacterMatches = (item, character) => {
   return (
     item.charAt(0).toLowerCase() === character ||
@@ -19,7 +21,7 @@ const CharacterList = ({
   );
 
   return letterItems.length > 0 ? (
-    <div className="CharacterList">
+    <div className={styles.CharacterList}>
       <HeadingTag>{character.toUpperCase()}</HeadingTag>
       <ul>
         {letterItems.map(item => {

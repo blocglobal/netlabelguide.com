@@ -1,14 +1,11 @@
 import Link from 'next/link';
+import styles from './Nav.module.scss';
 
 const Nav = () => {
   return (
-    <nav className="Nav center">
-      <Link href="/netlabels">
-        <a>Netlabels</a>
-      </Link>
-      <Link href="/resources">
-        <a>Resources</a>
-      </Link>
+    <nav className={`${styles.Nav} center`}>
+      <Link href="/netlabels">Netlabels</Link>
+      <Link href="/resources">Resources</Link>
     </nav>
   );
 };

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ResourceList from './ResourceList';
 import resourceData from '../data/resources.json';
+import styles from './SpotlightResources.module.scss';
 
 const selected = [
   'netlabel-day',
@@ -27,15 +28,13 @@ const SpotlightResources = () => {
   });
 
   return (
-    <div className="SpotlightResources">
+    <div className={styles.SpotlightResources}>
       <h2>Community Resources</h2>
       <ResourceList resources={resources} />
       <p className="center">
         See the{' '}
         <Link href="/resources">
-          <a>
-            <strong>complete resource list</strong>
-          </a>
+          <strong>complete resource list</strong>
         </Link>{' '}
         for more.
       </p>

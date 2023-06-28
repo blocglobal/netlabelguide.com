@@ -7,7 +7,7 @@ import SpotlightResources from '../components/SpotlightResources';
 
 const HomePage = () => {
   return (
-    <Layout className="Home" title="The Netlabel Guide" hideTitle>
+    <Layout title="The Netlabel Guide" hideTitle>
       <Head>
         <link
           rel="canonical"
@@ -18,9 +18,7 @@ const HomePage = () => {
       <div className="hero">
         <p>
           <strong>Update:</strong> Added{' '}
-          <Link href="/netlabel/fischfresse">
-            <a>Fischfresse</a>
-          </Link>
+          <Link href="/netlabel/fischfresse">Fischfresse</Link>
         </p>
       </div>
       <CommunityHappenings />

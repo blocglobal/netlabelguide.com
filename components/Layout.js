@@ -3,6 +3,7 @@ import Header from './Header';
 import HeaderInner from './HeaderInner';
 import Nav from './Nav';
 import Footer from './Footer';
+import styles from './Layout.module.scss';
 
 const Layout = ({
   title,
@@ -19,7 +20,7 @@ const Layout = ({
         <HeaderInner />
       )}
       <Nav />
-      <div className="content">{children}</div>
+      <div className={styles.Content}>{children}</div>
       <Footer />
     </div>
   );

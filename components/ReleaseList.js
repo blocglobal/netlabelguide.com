@@ -2,12 +2,13 @@ import dayjs from 'dayjs';
 import he from 'he';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import sluggify from '../utils/sluggify';
+import styles from './ReleaseList.module.scss';
 
 dayjs.extend(advancedFormat);
 
 const ReleaseList = ({ releases }) => {
   return releases ? (
-    <div className="ReleaseList">
+    <div className={styles.ReleaseList}>
       <h2>Recent Releases</h2>
       <ul>
         {releases.map((release, index) => {

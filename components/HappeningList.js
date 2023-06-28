@@ -1,12 +1,14 @@
+import styles from './HappeningList.module.scss';
+
 const HappeningList = () => {
   return (
-    <div className="HappeningList">
-      <div className="happening">
+    <div className={styles.HappeningList}>
+      <div className={styles.Happening}>
         <img
           src="/happenings/blocsonic-bscomp0056.jpg"
           alt="Cover of blocSonic release netBloc Vol. 56: Keep Unknown"
         />
-        <div className="information">
+        <div className={styles.Information}>
           <h3>blocSonic netBloc Series</h3>
           <p>
             Volume 56 of the long-running #ccmusic compilation series is out
@@ -19,12 +21,12 @@ const HappeningList = () => {
           </p>
         </div>
       </div>
-      <div className="happening">
+      <div className={styles.Happening}>
         <img
           src="/happenings/netlabel-archive-happening.svg"
           alt="Netlabel Archive logo"
         />
-        <div className="information">
+        <div className={styles.Information}>
           <h3>Netlabel Archive</h3>
           <p>Currently working on adding artist profiles…</p>
           <p>
@@ -34,8 +36,8 @@ const HappeningList = () => {
           </p>
         </div>
       </div>
-      <div className="happening about">
-        <div className="information">
+      <div className={styles.Happening}>
+        <div className={`${styles.Information} ${styles.AboutInformation}`}>
           <div>
             <h3>Have something we should include in this space?</h3>
             <p>
@@ -43,7 +45,10 @@ const HappeningList = () => {
               you have something going on, give us details and we can add it!
             </p>
             <p>
-              <a href="https://blocsonic.com/contact" className="btn">
+              <a
+                href="https://blocsonic.com/contact"
+                className={styles.AboutBtn}
+              >
                 Let us know about your happening!
               </a>
             </p>

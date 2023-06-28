@@ -1,6 +1,6 @@
 .NetlabelFilter {
   display: inline-block;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   margin: 0;
   padding: 1rem;
 
@@ -15,9 +15,11 @@
   }
 
   input {
-    padding: .5rem;
+    padding: 0.5rem;
     border: none;
     margin-top: 1rem;
+    min-width: 11.53125rem;
+    min-height: 1.149875rem;
 
     @media (min-width: 37.5rem) {
       margin-top: 1rem;

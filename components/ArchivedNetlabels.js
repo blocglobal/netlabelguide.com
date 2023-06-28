@@ -1,10 +1,11 @@
 import urlKeys from '../utils/urlKeys';
+import styles from './ArchivedNetlabels.module.scss';
 
 const ArchivedNetlabels = ({ archived = [] }) => {
   return (
-    <div className="ArchivedNetlabels">
+    <div className={styles.ArchivedNetlabels}>
       <h2>Archived Netlabels</h2>
-      <div className="netlabels">
+      <div className={styles.netlabels}>
         {archived.map(netlabel => {
           return (
             <ul key={`netlabel-${netlabel.label_name}`}>

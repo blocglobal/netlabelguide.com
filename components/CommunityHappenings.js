@@ -1,8 +1,9 @@
 import HappeningList from './HappeningList';
+import styles from './CommunityHappenings.module.scss';
 
 const CommunityHappenings = () => {
   return (
-    <div className="CommunityHappenings">
+    <div className={styles.CommunityHappenings}>
       <h2>Community Happenings</h2>
 
       <HappeningList />

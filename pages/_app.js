@@ -65,6 +65,7 @@ const App = ({ Component, pageProps }) => {
           content="https://netlabelguide.com/img/netlabelguide.png"
           key="og-image"
         />
+        <script async data-id="101420417" src="/f6c1a4a7af252b842.js"></script>
       </Head>
       <Component {...pageProps} />
     </Fragment>

@@ -14,7 +14,6 @@ const HomePage = () => {
           href="https://netlabelguide.com"
           key="canonical"
         />
-        <script async data-id="101420417" src="/f6c1a4a7af252b842.js"></script>
       </Head>
       <div className="hero">
         <p>

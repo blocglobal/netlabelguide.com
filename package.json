@@ -8,8 +8,6 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "preview": "wrangler dev",
-    "publish": "npm run export && wrangler publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mike Gregoire <mgregoire@nvzion.com>",

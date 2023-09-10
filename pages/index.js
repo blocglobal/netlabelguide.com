@@ -18,7 +18,7 @@ const HomePage = () => {
       <div className="hero">
         <p>
           <strong>Update:</strong> Added{' '}
-          <Link href="/netlabel/fischfresse">Fischfresse</Link>
+          <Link href="/netlabel/dots-and-chords">dots and chords</Link>
         </p>
       </div>
       <CommunityHappenings />

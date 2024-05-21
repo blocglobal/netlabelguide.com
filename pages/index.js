@@ -18,7 +18,7 @@ const HomePage = () => {
       <div className="hero">
         <p>
           <strong>Update:</strong> Added{' '}
-          <Link href="/netlabel/dots-and-chords">dots and chords</Link>
+          <Link href="/netlabel/argali-records">Argali Records</Link>
         </p>
       </div>
       <CommunityHappenings />

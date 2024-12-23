@@ -189,17 +189,6 @@
       }
     },
     {
-      "name": "CC TRAX",
-      "slug": "cc-trax",
-      "description": "Extensive blog/archive spreading the good word about CC music. A great central location to catch up with and download a diverse selection of Creative Commons licensed music by CC artists and netlabels.",
-      "type": "blog",
-      "urls": {
-        "homepage": "https://cctrax.com",
-        "rss": "https://feeds.feedburner.com/cctrax",
-        "twitter": "https://twitter.com/deeload"
-      }
-    },
-    {
       "name": "Ojdo",
       "slug": "ojdo",
       "description": "Music reviews, desktop wallpapers and computer how-to articles. Only Creative Commons content.",

@@ -22,6 +22,9 @@ const Netlabels = ({ netlabels }) => {
   const status = router.query.status ? router.query.status : 'active';
   const [filterVal, setFilterVal] = useState('');
 
+  const description =
+    'Explore the world of netlabels with our comprehensive guide! Dive into a curated directory of free music labels, discover new artists, and download amazing tracks across a variety of genres. Your go-to resource for all things netlabel!';
+
   return (
     <Layout header="inner" className="Netlabels" title="Netlabels">
       <Head>
@@ -30,7 +33,7 @@ const Netlabels = ({ netlabels }) => {
           href="https://netlabelguide.com/netlabels"
           key="canonical"
         />
-        <title>Netlabel List — The Netlabel Guide</title>
+        <title>Netlabels: The Netlabel List — The Netlabel Guide</title>
         <meta
           property="og:url"
           content="https://netlabelguide.com/netlabels"
@@ -38,12 +41,22 @@ const Netlabels = ({ netlabels }) => {
         />
         <meta
           property="og:title"
-          content="Netlabel List — The Netlabel Guide"
+          content="Netlabels: The Netlabel List — The Netlabel Guide"
           key="og-title"
         />
+        <meta property="og:description" content={description} />
+        <meta name="description" content={description} />
       </Head>
       <Breadcrumbs links={[{ href: '/netlabels', name: 'Netlabels' }]} />
       <h1>Netlabels</h1>
+      <p>
+        Netlabels are independent online music labels that distribute music
+        digitally, often for free or under Creative Commons licenses. They
+        provide a platform for artists to share their work directly with
+        listeners, offering fresh sounds and fostering global music communities.
+        Explore our directory to discover unique labels and dive into a world of
+        innovative music!
+      </p>
       <NetlabelFilter
         status={status}
         inputValue={filterVal}

@@ -29,8 +29,7 @@ const HappeningList = () => {
         <div className={styles.Information}>
           <h3>Netlabel Archive</h3>
           <p>
-            Recently archived: ZipHit, Oír Para Creer, The Art of Realistix,
-            Dust Stream Records, Doblec, Firteen Records
+            Recently archived: Kellerloch, Adapter, 4four, and TuneIn Records
           </p>
           <p>
             <a href="https://netlabelarchive.org/">

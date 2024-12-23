@@ -45,12 +45,25 @@ ul {
   margin-top: 0;
 }
 
+hr {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #ddd;
+  margin: 3rem 0;
+}
+
+strong,
 .strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .hero {

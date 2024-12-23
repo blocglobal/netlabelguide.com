@@ -45,7 +45,7 @@ const App = ({ Component, pageProps }) => {
           onLoad="this.media='all'"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap"
           rel="stylesheet"
         ></link>
         <meta

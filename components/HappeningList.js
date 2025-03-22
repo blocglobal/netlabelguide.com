@@ -5,6 +5,26 @@ const HappeningList = () => {
     <div className={styles.HappeningList}>
       <div className={styles.Happening}>
         <img
+          src="/happenings/remix-lorenzos-music.jpg"
+          alt="Remix Lorenzo’s Music!"
+        />
+        <div className={`${styles.Information}`}>
+          <div>
+            <h3>Remix Lorenzo’s Music!</h3>
+            <p>
+              Submit your remix by June 11th for a chance to be featured on a
+              special blocSonic Netlabel Day release.
+            </p>
+            <p>
+              <a href="https://lorenzosmusic.blocsonic.com/">
+                Learn more about the remix event
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.Happening}>
+        <img
           src="/happenings/blocsonic-bscomp0056.jpg"
           alt="Cover of blocSonic release netBloc Vol. 56: Keep Unknown"
         />
@@ -38,7 +58,8 @@ const HappeningList = () => {
           </p>
         </div>
       </div>
-      <div className={styles.Happening}>
+
+      {/* <div className={styles.Happening}>
         <div className={`${styles.Information} ${styles.AboutInformation}`}>
           <div>
             <h3>Have something we should include in this space?</h3>
@@ -56,7 +77,7 @@ const HappeningList = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

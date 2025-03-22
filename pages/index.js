@@ -17,7 +17,7 @@ const HomePage = () => {
       </Head>
       <div className="hero">
         <h2>Welcome to The Netlabel Guide</h2>
-        <p class="left">
+        <p className="left">
           Discover the vibrant world of netlabels, where independent music
           thrives and creativity knows no bounds. Whether you’re a passionate
           listener, an emerging artist, a curious creator, or a longtime
@@ -25,7 +25,7 @@ const HomePage = () => {
           ultimate resource to explore, connect, and grow in this dynamic
           community.
         </p>
-        <p class="left">
+        <p className="left">
           Start exploring today—because the future of music is collaborative,
           innovative, and independent.
         </p>

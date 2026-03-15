@@ -65,6 +65,8 @@ const App = ({ Component, pageProps }) => {
           content="https://netlabelguide.com/img/netlabelguide.png"
           key="og-image"
         />
+        <link rel="prefetch" href="/netlabels" />
+        <link rel="prefetch" href="/resources" />
         <script async data-id="101420417" src="/f6c1a4a7af252b842.js"></script>
       </Head>
       <Component {...pageProps} />

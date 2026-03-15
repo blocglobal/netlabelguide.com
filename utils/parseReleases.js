@@ -9,7 +9,7 @@ const parseReleases = async netlabel => {
   if (netlabel.activity_state === 'active') {
     if (netlabel.urls && netlabel.urls[urlKeys.RELEASES]) {
       const feed = await parser.parseURL(netlabel.urls[urlKeys.RELEASES]);
-      releases = feed.items;
+      releases = feed.items.slice(0, 20);
     }
   }
 

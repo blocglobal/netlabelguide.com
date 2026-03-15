@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import classnames from 'classnames';
 import styles from './NetlabelFilter.module.scss';
 
@@ -6,20 +5,20 @@ const NetlabelFilter = ({ status, inputValue, onChange }) => {
   return (
     <ul className={styles.NetlabelFilter}>
       <li>
-        <Link
+        <a
           href="/netlabels?status=active"
-          className={status === 'active' && 'strong'}
+          className={status === 'active' ? 'strong' : undefined}
         >
           Active
-        </Link>
+        </a>
       </li>
       <li>
-        <Link
+        <a
           href="/netlabels?status=inactive"
           className={classnames({ strong: status === 'inactive' })}
         >
           Inactive
-        </Link>
+        </a>
       </li>
       <li>
         <input

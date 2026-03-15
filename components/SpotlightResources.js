@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import ResourceList from './ResourceList';
 import resourceData from '../data/resources.json';
 import styles from './SpotlightResources.module.scss';
@@ -33,9 +32,9 @@ const SpotlightResources = () => {
       <ResourceList resources={resources} />
       <p className="center">
         See the{' '}
-        <Link href="/resources">
+        <a href="/resources">
           <strong>complete resource list</strong>
-        </Link>{' '}
+        </a>{' '}
         for more.
       </p>
     </div>

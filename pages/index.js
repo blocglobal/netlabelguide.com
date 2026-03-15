@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import Layout from '../components/Layout';
 import CommunityHappenings from '../components/CommunityHappenings';
 import SpotlightResources from '../components/SpotlightResources';
@@ -32,7 +31,7 @@ const HomePage = () => {
         <hr />
         <p>
           <strong>Update:</strong> Added{' '}
-          <Link href="/netlabel/jumpsuit-records">Jumpsuit Records</Link>
+          <a href="/netlabel/jumpsuit-records">Jumpsuit Records</a>
         </p>
       </div>
       <CommunityHappenings />

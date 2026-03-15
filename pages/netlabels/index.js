@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import NetlabelList from '../../components/NetlabelList';
@@ -18,9 +17,16 @@ const filter = (netlabels, status, filter = null) => {
 };
 
 const Netlabels = ({ netlabels }) => {
-  const router = useRouter();
-  const status = router.query.status ? router.query.status : 'active';
+  const [status, setStatus] = useState('active');
   const [filterVal, setFilterVal] = useState('');
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const statusParam = params.get('status');
+    if (statusParam) {
+      setStatus(statusParam);
+    }
+  }, []);
 
   const description =
     'Explore the world of netlabels with our comprehensive guide! Dive into a curated directory of free music labels, discover new artists, and download amazing tracks across a variety of genres. Your go-to resource for all things netlabel!';

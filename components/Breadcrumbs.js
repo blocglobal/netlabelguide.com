@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './Breadcrumbs.module.scss';
 
 const Breadcrumbs = ({ links = [] }) => {
@@ -10,17 +9,17 @@ const Breadcrumbs = ({ links = [] }) => {
       className={styles.Breadcrumbs}
     >
       <li property="itemListElement" typeof="ListItem">
-        <Link href="/" property="item" typeof="WebPage">
+        <a href="/" property="item" typeof="WebPage">
           <span property="name">Home</span>
-        </Link>
+        </a>
         <meta property="position" content="1" />
       </li>
       {links.map(link => {
         const linkEl = (
           <li property="itemListElement" typeof="ListItem" key={link.href}>
-            <Link href={link.href} property="item" typeof="WebPage">
+            <a href={link.href} property="item" typeof="WebPage">
               <span property="name">{link.name}</span>
-            </Link>
+            </a>
             <meta property="position" content={position} />
           </li>
         );

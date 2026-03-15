@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './GenreList.module.scss';
 
 const GenreList = ({ genres = [], heading = false }) => {
@@ -10,7 +9,7 @@ const GenreList = ({ genres = [], heading = false }) => {
           {genres.map(genre => {
             return (
               <li key={`genres-${genre.slug}`}>
-                <Link href={`/genre/${genre.slug}`}>{genre.name}</Link>
+                <a href={`/genre/${genre.slug}`}>{genre.name}</a>
               </li>
             );
           })}

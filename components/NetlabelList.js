@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import CharacterList from './CharacterList';
 import styles from './NetlabelList.module.scss';
 
@@ -6,7 +5,7 @@ const chars = '#abcdefghijklmnopqrstuvwxyz';
 
 const NetlabelList = ({ netlabels }) => {
   const handlerRenderItem = item => (
-    <Link href={`/netlabel/${item.slug}`}>{item.label_name}</Link>
+    <a href={`/netlabel/${item.slug}`}>{item.label_name}</a>
   );
 
   return (

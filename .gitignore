@@ -7,3 +7,8 @@ node_modules
 out
 wrangler.toml
 .DS_Store
+CLAUDE.md
+PRD.md
+.claude/
+.devloop/
+progress.txt

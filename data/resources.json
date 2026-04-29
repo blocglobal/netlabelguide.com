@@ -20,17 +20,6 @@
       }
     },
     {
-      "name": "CC Community Music Awards",
-      "slug": "cc-community-music-awards",
-      "description": "The annual award event that shines a spotlight on Creative Commons music excellence.",
-      "type": "event",
-      "urls": {
-        "homepage": "https://ccmusicawards.com",
-        "twitter": "https://twitter.com/ccmusicawards",
-        "facebook": "https://facebook.com/CCCommunityMusicAwards"
-      }
-    },
-    {
       "name": "ccMixter",
       "slug": "ccmixter",
       "description": "A community site that encourages the use of Creative Commons licensed remixable music resources through content hosting and special remix events.",

@@ -31,7 +31,7 @@ const HomePage = () => {
         <hr />
         <p>
           <strong>Update:</strong> Added{' '}
-          <a href="/netlabel/jumpsuit-records">Jumpsuit Records</a>
+          <a href="/netlabel/nucleoroto">Nucleoroto</a>
         </p>
       </div>
       <CommunityHappenings />

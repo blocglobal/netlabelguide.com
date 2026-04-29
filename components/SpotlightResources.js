@@ -4,10 +4,8 @@ import styles from './SpotlightResources.module.scss';
 
 const selected = [
   'netlabel-day',
-  'cc-community-music-awards',
   'ccmixter',
   'netlabel-archive',
-  'starfrosch-com',
   'netwaves-org',
   'radio-brennpunkt',
   'rynothebearded-oo-top-10',

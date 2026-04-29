@@ -55,20 +55,6 @@
       }
     },
     {
-      "name": "Starfrosch.com",
-      "slug": "starfrosch-com",
-      "description": "Great Creative Commons music resource featuring 24/7 radio streams and the #hot111 chart.",
-      "type": "radio",
-      "urls": {
-        "homepage": "https://starfrosch.com",
-        "facebook": "https://facebook.com/starfrosch",
-        "twitter": "https://twitter.com/starfrosch",
-        "instagram": "https://www.instagram.com/starfroschofficial/",
-        "youtube": "https://www.youtube.com/c/StarfroschCH",
-        "rss": "https://starfrosch.com/feed"
-      }
-    },
-    {
       "name": "Netwaves.org",
       "slug": "netwaves-org",
       "description": "A podcast specializing in spotlighting great Creative Commons music.",
